@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#46178F" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="Trivia Guess — a fast, replayable trivia guessing game across 16 categories." />
+  <title>Trivia Guess</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="home-screen" class="screen screen--home" aria-label="Home screen">
+      <header class="home-header">
+        <h1 class="game-title">Trivia <span class="game-title__accent">Guess</span></h1>
+        <p class="greeting" id="greeting">Hi Rameeza 👋</p>
+      </header>
+
+      <div class="stats-row" id="stats-row" aria-label="Player stats">
+        <div class="stat-pill">
+          <span class="stat-pill__label">Best Score</span>
+          <span class="stat-pill__value" id="best-score">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-pill__label">Best Streak</span>
+          <span class="stat-pill__value" id="best-streak">0</span>
+        </div>
+      </div>
+
+      <button class="daily-card" id="daily-challenge" type="button">
+        <span class="daily-card__icon" aria-hidden="true">🏆</span>
+        <span class="daily-card__text">
+          <span class="daily-card__title">Daily Challenge</span>
+          <span class="daily-card__date" id="daily-date">Today</span>
+        </span>
+        <span class="daily-card__arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="mix-card" id="mix-category" type="button" data-category="Mix">
+        <span class="mix-card__icon" aria-hidden="true">🎲</span>
+        <span class="mix-card__label">Mix</span>
+      </button>
+
+      <div class="category-grid" id="category-grid" aria-label="Category picker">
+        <!-- category cards injected by game.js -->
+      </div>
+
+      <footer class="home-footer">
+        <span id="question-count">0 questions loaded</span>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>

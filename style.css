@@ -1,0 +1,354 @@
+/* ==========================================================================
+   Trivia Guess — Global Styles
+   ========================================================================== */
+
+:root {
+  /* Color palette */
+  --color-bg-primary: #46178F;
+  --color-bg-secondary: #5B24A8;
+  --color-gold: #F2C94C;
+  --color-gold-soft: #f7dd8a;
+  --color-text-primary: #FFFFFF;
+  --color-text-muted: #D9C7F0;
+  --color-hint: #9B7BC7;
+
+  --color-red: #E74C3C;
+  --color-blue: #3498DB;
+  --color-yellow: #F1C40F;
+  --color-green: #2ECC71;
+
+  --color-correct: #2ECC71;
+  --color-wrong: #E74C3C;
+
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --card-bg-hover: rgba(255, 255, 255, 0.14);
+  --card-border: rgba(255, 255, 255, 0.12);
+
+  /* Fonts */
+  --font-display: "Fredoka", "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Sizing */
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+
+  /* Motion */
+  --transition-fast: 120ms ease;
+  --transition-base: 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background: linear-gradient(160deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Smooth transitions on all interactive elements */
+button,
+a,
+.stat-pill,
+.daily-card,
+.mix-card,
+.category-card {
+  transition: transform var(--transition-fast), background-color var(--transition-base),
+    box-shadow var(--transition-base), border-color var(--transition-base), opacity var(--transition-base);
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ---- Header ---- */
+
+.home-header {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.game-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 9vw, 3.4rem);
+  letter-spacing: 0.5px;
+  line-height: 1.05;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.game-title__accent {
+  color: var(--color-gold);
+}
+
+.greeting {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* ---- Stats row ---- */
+
+.stats-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.stat-pill {
+  flex: 1;
+  max-width: 220px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.stat-pill__label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.stat-pill__value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  margin-top: 2px;
+}
+
+/* ---- Daily challenge card ---- */
+
+.daily-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, rgba(242, 201, 76, 0.16), rgba(242, 201, 76, 0.06));
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-lg);
+  text-align: left;
+  box-shadow: 0 0 0 rgba(242, 201, 76, 0);
+}
+
+.daily-card:hover {
+  box-shadow: 0 0 22px rgba(242, 201, 76, 0.35);
+  transform: translateY(-2px);
+}
+
+.daily-card:active {
+  transform: scale(0.97);
+}
+
+.daily-card__icon {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.daily-card__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.daily-card__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-gold);
+}
+
+.daily-card__date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.daily-card__arrow {
+  font-size: 1.3rem;
+  color: var(--color-gold);
+}
+
+/* ---- Mix card (primary CTA) ---- */
+
+.mix-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 22px 18px;
+  background: linear-gradient(135deg, #ffffff 0%, #f4ecff 100%);
+  color: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.mix-card__icon {
+  font-size: 2rem;
+}
+
+.mix-card__label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.mix-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(242, 201, 76, 0.4);
+}
+
+.mix-card:active {
+  transform: scale(0.96);
+}
+
+/* ---- Category grid ---- */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 18px 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.category-card__emoji {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.category-card__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.category-card:hover {
+  background: var(--card-bg-hover);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 16px rgba(242, 201, 76, 0.25);
+  transform: translateY(-2px);
+}
+
+.category-card:active {
+  transform: scale(0.94);
+  background: rgba(242, 201, 76, 0.18);
+}
+
+/* ---- Footer ---- */
+
+.home-footer {
+  text-align: center;
+  padding: 4px 0 6px;
+  font-size: 0.75rem;
+  color: var(--color-hint);
+}
+
+/* ==========================================================================
+   Responsive — wider screens
+   ========================================================================== */
+
+@media (min-width: 480px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 700px) {
+  .category-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #app {
+    padding-top: 48px;
+  }
+}
+
+/* ==========================================================================
+   Reduced motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .daily-card:hover,
+  .mix-card:hover,
+  .category-card:hover {
+    transform: none;
+  }
+}

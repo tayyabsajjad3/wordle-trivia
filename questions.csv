@@ -1,0 +1,61 @@
+category,difficulty,clue,answer,option2,option3,option4
+Geography,easy,Country shaped like a boot,ITALY,,,
+Geography,easy,Largest country in the world by area,RUSSIA,,,
+Geography,easy,Longest river in the world,NILE,,,
+Geography,medium,Capital city of Australia,CANBERRA,,,
+Geography,medium,Smallest country in the world by area,VATICAN CITY,,,
+Geography,medium,Country that gifted the Statue of Liberty to the USA,FRANCE,,,
+Geography,hard,Country with the most time zones in the world,FRANCE,Russia,USA,Canada
+Science,easy,Gas humans need to breathe to survive,OXYGEN,,,
+Space|Science,easy,Planet known as the Red Planet,MARS,,,
+Science,medium,Element with the chemical symbol Au,GOLD,,,
+Science,medium,Powerhouse of the cell,MITOCHONDRIA,,,
+Science,hard,Metal that is liquid at room temperature,MERCURY,Lead,Tin,Zinc
+Movies,easy,1997 film about a ship that sinks,TITANIC,,,
+Movies,easy,Animated film about a lion prince,LION KING,,,
+Movies,medium,Studio known for Toy Story and Finding Nemo,PIXAR,,,
+Movies,medium,Pixar film about emotions inside a girl's mind,INSIDE OUT,,,
+Movies|Literature,hard,Author of the Harry Potter book series,ROWLING,Meyer,King,Collins
+Animals,easy,Largest land animal,ELEPHANT,,,
+Animals|Nature,easy,King of the jungle,LION,,,
+Animals|Nature,medium,Fastest land animal,CHEETAH,,,
+Animals,medium,African animal known for its black and white stripes,ZEBRA,,,
+Animals,hard,Only mammal capable of true powered flight,BAT,Squirrel,Lemur,Colugo
+History,easy,First President of the United States,WASHINGTON,,,
+History,easy,War fought between the North and South in the US,CIVIL WAR,,,
+History,medium,Ancient Egyptian ruler often buried in pyramids,PHARAOH,,,
+Space|History|Famous People,medium,First person to walk on the moon,ARMSTRONG,,,
+Food,easy,Fruit that keeps the doctor away,APPLE,,,
+Food,easy,Yellow fruit monkeys love,BANANA,,,
+Food,medium,Most expensive spice by weight made from crocus flowers,SAFFRON,,,
+Food,medium,Traditional Japanese dish of vinegared rice and raw fish,SUSHI,,,
+Music,easy,Instrument with black and white keys,PIANO,,,
+Music,medium,Composer who kept composing after losing his hearing,BEETHOVEN,,,
+Music,medium,Music genre that originated in Jamaica,REGGAE,,,
+Music,hard,Singer known as the King of Pop,JACKSON,Prince,Elvis,Madonna
+Sports,easy,Sport played at Wimbledon,TENNIS,,,
+Sports,easy,Sport where players hit a puck with a stick,HOCKEY,,,
+Sports,medium,Number of players on a soccer team on the field,ELEVEN,,,
+Sports,hard,Country that has won the most FIFA World Cup titles,BRAZIL,Germany,Italy,Argentina
+Technology,easy,Company that makes the iPhone,APPLE,,,
+Technology,medium,Search engine and tech company owned by Alphabet,GOOGLE,,,
+Technology,hard,Inventor credited with creating the World Wide Web,BERNERS-LEE,Turing,Jobs,Gates
+Art,easy,Painter of the Mona Lisa,DA VINCI,,,
+Art,medium,Dutch painter famous for Starry Night,VAN GOGH,,,
+Art,hard,Art movement associated with Salvador Dali,SURREALISM,Cubism,Impressionism,Baroque
+Space,easy,Planet closest to the sun,MERCURY,,,
+Space,medium,Galaxy that contains our solar system,MILKY WAY,,,
+Space,hard,First artificial satellite launched into orbit,SPUTNIK,Apollo,Voyager,Hubble
+Literature,easy,Author of Romeo and Juliet,SHAKESPEARE,,,
+Literature,medium,Creator of the detective Sherlock Holmes,CONAN DOYLE,,,
+Literature,hard,Author of the dystopian novels 1984 and Animal Farm,ORWELL,Huxley,Bradbury,Wells
+Human Body,easy,Organ that pumps blood through the body,HEART,,,
+Human Body,medium,Largest organ of the human body,SKIN,,,
+Human Body,hard,Longest bone in the human body,FEMUR,Tibia,Humerus,Fibula
+Famous People,easy,Physicist known for the theory of relativity,EINSTEIN,,,
+Famous People,medium,South African leader who fought against apartheid,MANDELA,,,
+Nature,easy,Tallest type of tree on Earth,REDWOOD,,,
+Nature,medium,Force that causes day and night on Earth,ROTATION,,,
+TV Shows,easy,Sitcom about six friends living in New York,FRIENDS,,,
+TV Shows,medium,Show about a chemistry teacher turned drug lord,BREAKING BAD,,,
+TV Shows,hard,Fantasy series based on George R.R. Martin's novels,GAME OF THRONES,Lord of the Rings,The Witcher,Vikings
