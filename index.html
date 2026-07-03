@@ -17,7 +17,12 @@
 </head>
 <body>
   <main id="app">
-    <section id="home-screen" class="screen screen--home" aria-label="Home screen">
+    <section id="home-screen" class="screen screen--home screen--active" data-screen="home" aria-label="Home screen">
+      <div class="home-topbar">
+        <button class="icon-btn" id="how-to-play-btn" type="button" aria-label="How to play">❓</button>
+        <button class="icon-btn" id="fireworks-replay-btn" type="button" aria-label="Replay birthday fireworks">🎆</button>
+        <button class="icon-btn" id="settings-btn" type="button" aria-label="Settings">⚙️</button>
+      </div>
       <header class="home-header">
         <h1 class="game-title">Trivia <span class="game-title__accent">Guess</span></h1>
         <p class="greeting" id="greeting">Hi Rameeza 👋</p>
@@ -56,7 +61,299 @@
         <span id="question-count">0 questions loaded</span>
       </footer>
     </section>
+
+    <section id="game-screen" class="screen screen--game" data-screen="game" aria-label="Game screen">
+      <div class="game-topbar">
+        <button class="back-btn" id="back-to-home" type="button" aria-label="Quit to home">✕</button>
+        <div class="hearts" id="hearts-display" aria-label="Hearts remaining"></div>
+        <div class="score-display">
+          <span class="score-label">Score</span>
+          <span class="score-value" id="score-value">0</span>
+        </div>
+        <div class="streak-display" id="streak-display">
+          <span class="streak-flame" aria-hidden="true">🔥</span><span id="streak-value">0</span>
+        </div>
+      </div>
+
+      <div class="game-middle" id="game-middle">
+        <span class="difficulty-badge" id="difficulty-badge">EASY</span>
+        <p class="category-label" id="game-category-label"></p>
+        <p class="clue-text" id="clue-text"></p>
+        <div class="answer-boxes" id="answer-boxes"></div>
+        <p class="letters-left" id="letters-left">Letters left: 6</p>
+        <div class="mc-options" id="mc-options"></div>
+      </div>
+
+      <div class="game-bottom">
+        <div class="keyboard" id="keyboard"></div>
+        <button class="show-options-btn" id="show-options-btn" type="button">💡 Show options (−2 letters)</button>
+      </div>
+    </section>
+
+    <section id="game-over-screen" class="screen screen--game-over" data-screen="gameOver" aria-label="Game over">
+      <div class="game-over-card">
+        <h2 id="game-over-heading">🎮 Game Over</h2>
+        <div class="game-over-stats" id="game-over-stats"></div>
+        <div class="game-over-actions">
+          <button id="play-again-btn" type="button">▶ Play again</button>
+          <button id="go-home-btn" type="button">🏠 Home</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="settings-screen" class="screen screen--settings" data-screen="settings" aria-label="Settings screen">
+      <div class="settings-topbar">
+        <button class="back-btn" id="settings-back-btn" type="button" aria-label="Back to home">←</button>
+        <h2 class="settings-title">Settings</h2>
+        <span class="settings-topbar-spacer" aria-hidden="true"></span>
+      </div>
+
+      <div class="settings-section">
+        <h3 class="settings-section__title">🔊 Sound</h3>
+
+        <label class="settings-toggle-row" for="mute-toggle">
+          <span>Mute all sounds</span>
+          <span class="switch">
+            <input type="checkbox" id="mute-toggle" />
+            <span class="switch__track"><span class="switch__thumb"></span></span>
+          </span>
+        </label>
+
+        <div class="settings-slider-row">
+          <label for="volume-slider">Volume</label>
+          <input type="range" id="volume-slider" class="volume-slider" min="0" max="100" value="60" />
+        </div>
+
+        <button class="test-sound-btn" id="test-sound-btn" type="button">▶ Test sound</button>
+      </div>
+
+      <div class="settings-section">
+        <h3 class="settings-section__title">📳 Haptics</h3>
+
+        <label class="settings-toggle-row" for="haptics-toggle">
+          <span>Vibration feedback</span>
+          <span class="switch">
+            <input type="checkbox" id="haptics-toggle" />
+            <span class="switch__track"><span class="switch__thumb"></span></span>
+          </span>
+        </label>
+
+        <p class="settings-note">Requires supported device</p>
+      </div>
+
+      <div class="settings-section settings-section--about">
+        <h3 class="settings-section__title">ℹ️ About</h3>
+        <p class="settings-about-text">Trivia Guess • v1.0</p>
+        <p class="settings-about-text">Made with love</p>
+      </div>
+    </section>
+
+    <section id="daily-result-screen" class="screen screen--daily-result" data-screen="dailyResult" aria-label="Daily challenge result">
+      <div class="daily-result-card" id="daily-result-card"></div>
+    </section>
+
+    <section id="how-to-play-screen" class="screen screen--how-to-play" data-screen="howToPlay" aria-label="How to play">
+      <div class="htp-topbar">
+        <button class="back-btn" id="htp-back-btn" type="button" aria-label="Back to home">←</button>
+        <h2 class="htp-title">How to Play</h2>
+        <span class="settings-topbar-spacer" aria-hidden="true"></span>
+      </div>
+
+      <div class="htp-content">
+        <div class="htp-section">
+          <h3 class="htp-section__title">🎮 What is this game?</h3>
+          <p class="htp-section__body">
+            Trivia Guess is a quick, addictive trivia game where you answer questions on all
+            kinds of topics — geography, movies, science, you name it. Guess letters, pick the
+            right answer, and build up as big a score as you can before you run out of hearts.
+            Simple to pick up, surprisingly hard to put down!
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">❓ How a round works</h3>
+          <p class="htp-section__body">Every question comes in one of three flavors:</p>
+          <p class="htp-section__body">
+            <strong>🟢 Easy</strong> — It's just like Hangman. You'll see a blank space for
+            each letter of the answer, and you tap letters on the on-screen keyboard to guess.
+            Get it right letter by letter until the whole word appears.
+          </p>
+          <p class="htp-section__body">
+            <strong>🟡 Medium</strong> — Same hangman game as Easy, but you get a free first
+            letter to start you off. A little help to point you in the right direction.
+          </p>
+          <p class="htp-section__body">
+            <strong>🔴 Hard</strong> — No letter-guessing here — just four answers to choose
+            from. Tap the one you think is right.
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">❤️ Hearts</h3>
+          <p class="htp-section__body">
+            You start every game with 3 hearts. Get a question wrong — run out of letter
+            guesses on a hangman question, or pick the wrong multiple-choice answer — and you
+            lose one. Run out of all three hearts and the game ends. But don't worry, you can
+            jump right back in and try again whenever you like.
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">💡 Stuck? Use "Show options"</h3>
+          <p class="htp-section__body">
+            Stuck on a hangman question (Easy or Medium)? Tap "Show options" and it'll turn
+            into multiple choice for you — four answers, pick the right one. It costs you a
+            couple of letter guesses, but it can save your heart when you're really not sure.
+            You get one "Show options" per question, so use it wisely.
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">🌍 Categories &amp; Mix</h3>
+          <p class="htp-section__body">
+            Pick a category you love — Geography, Movies, Science, Animals, and more — to
+            focus your questions on that topic. Or tap Mix to get a random blend of everything.
+            Either way, you'll never know exactly what's coming next.
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">🎯 Difficulty modes</h3>
+          <p class="htp-section__body">When you pick a category, you'll also choose how you want to play:</p>
+          <p class="htp-section__body">
+            <strong>📈 Progressive</strong> (recommended if you're just starting out) — Starts
+            nice and easy, then gets tougher the better you're doing. It feels like leveling up
+            as you go.
+          </p>
+          <p class="htp-section__body">
+            <strong>🎲 Random</strong> — No telling what's coming. Could be easy, could be
+            hard — every question is a surprise.
+          </p>
+          <p class="htp-section__body">
+            <strong>🟢 Easy</strong> — Every question is easy. Perfect for a relaxed, chill
+            session.
+          </p>
+          <p class="htp-section__body">
+            <strong>🟡 Medium</strong> — Every question is medium. A steady, fair challenge.
+          </p>
+          <p class="htp-section__body">
+            <strong>🔴 Hard</strong> — Every question is hard, multiple choice only. For when
+            you want to really test yourself.
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">🔥 Streaks</h3>
+          <p class="htp-section__body">
+            Every correct answer in a row builds your streak — and the bigger your streak, the
+            more bonus points each answer is worth. Get one wrong, though, and your streak
+            resets to zero. So a long streak feels amazing... but it's worth protecting!
+          </p>
+          <p class="htp-section__body">Here's roughly what you earn:</p>
+          <ul class="htp-list">
+            <li>Easy question: <strong>10 points</strong></li>
+            <li>Medium question: <strong>20 points</strong></li>
+            <li>Hard question: <strong>30 points</strong></li>
+            <li>Plus a streak bonus: <strong>5 points × your current streak</strong></li>
+          </ul>
+          <p class="htp-section__body">
+            So the longer your streak, the juicier your points get — a 5-answer streak on a
+            medium question could earn you 20 + 25 = 45 points in one go!
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">🌟 Daily Challenge</h3>
+          <p class="htp-section__body">
+            Once a day, there's a special Daily Challenge — one hard question, worth double
+            points, and only one try. Answer it right and your daily streak grows, which makes
+            tomorrow's challenge worth even more. But miss a day, and that streak resets — so
+            try to check in every day and keep it alive!
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">🏆 Chasing your best</h3>
+          <p class="htp-section__body">
+            Your best score and best streak are always saved, right there on the home screen.
+            Every run is a fresh chance to beat your own record — good luck!
+          </p>
+        </div>
+
+        <div class="htp-section">
+          <h3 class="htp-section__title">⚙️ Settings</h3>
+          <p class="htp-section__body">
+            Want to turn the volume down, mute the sound, or turn off vibration? Tap the gear
+            icon ⚙️ on the home screen any time to adjust things to your liking.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <div class="overlay" id="round-end-overlay" aria-live="polite">
+    <div class="overlay__card" id="round-end-card"></div>
+  </div>
+
+  <div class="overlay" id="rescue-overlay" aria-live="polite">
+    <div class="overlay__card" id="rescue-card"></div>
+  </div>
+
+  <div class="overlay overlay--picker" id="difficulty-picker" aria-live="polite">
+    <div class="picker-card" id="picker-card">
+      <button class="picker-close-btn" id="picker-close-btn" type="button" aria-label="Cancel">✕</button>
+      <h2 class="picker-title">Pick difficulty</h2>
+      <p class="picker-subtitle" id="picker-subtitle">🎲 Mix</p>
+      <div class="picker-options" id="picker-options">
+        <button class="picker-option" data-mode="progressive" type="button">
+          <span class="picker-option__icon" aria-hidden="true">📈</span>
+          <span class="picker-option__text">
+            <span class="picker-option__label">Progressive <span class="picker-option__pill">Recommended</span></span>
+            <span class="picker-option__subtitle">Starts easy, ramps up</span>
+          </span>
+        </button>
+        <button class="picker-option" data-mode="random" type="button">
+          <span class="picker-option__icon" aria-hidden="true">🎲</span>
+          <span class="picker-option__text">
+            <span class="picker-option__label">Random</span>
+            <span class="picker-option__subtitle">Random mix of all difficulties</span>
+          </span>
+        </button>
+        <button class="picker-option" data-mode="easy" type="button">
+          <span class="picker-option__icon" aria-hidden="true">🟢</span>
+          <span class="picker-option__text">
+            <span class="picker-option__label">Easy</span>
+            <span class="picker-option__subtitle">All easy questions</span>
+          </span>
+        </button>
+        <button class="picker-option" data-mode="medium" type="button">
+          <span class="picker-option__icon" aria-hidden="true">🟡</span>
+          <span class="picker-option__text">
+            <span class="picker-option__label">Medium</span>
+            <span class="picker-option__subtitle">All medium questions</span>
+          </span>
+        </button>
+        <button class="picker-option" data-mode="hard" type="button">
+          <span class="picker-option__icon" aria-hidden="true">🔴</span>
+          <span class="picker-option__text">
+            <span class="picker-option__label">Hard</span>
+            <span class="picker-option__subtitle">All hard questions</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="level-up-toast" id="level-up-toast">⬆ Level up!</div>
+
+  <div class="fireworks-screen" id="fireworks-screen">
+    <canvas id="fireworks-canvas"></canvas>
+    <div class="fireworks-text">
+      <h1 class="fireworks-title">🎉 Happy Birthday Rameeza! 🎉</h1>
+      <p class="fireworks-subtitle">Wishing you the best day ✨</p>
+    </div>
+    <button class="fireworks-continue-btn" id="fireworks-continue-btn" type="button">Continue</button>
+  </div>
 
   <script type="module" src="game.js"></script>
 </body>
