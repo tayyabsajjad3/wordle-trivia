@@ -31,7 +31,7 @@ const CATEGORIES = [
   { name: "TV Shows", emoji: "📺" },
 ];
 
-const KEYBOARD_ROWS = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
+const KEYBOARD_ROWS = ["1234567890", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
 const LETTER_ATTEMPTS = 6;
 
 // Single global state object — expanded across prompts (run, hearts, score, etc.)
@@ -936,7 +936,7 @@ function revealLetterBox(pos) {
 function flashKeyGreen(keyBtn) {
   if (!keyBtn) return;
   keyBtn.classList.add("key--correct", "key--correct-flash");
-  setTimeout(() => keyBtn.classList.remove("key--correct-flash"), 500);
+  setTimeout(() => keyBtn.classList.remove("key--correct-flash", "key--correct"), 500);
 }
 
 function handleKeyPress(letter) {
