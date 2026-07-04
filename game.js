@@ -55,7 +55,7 @@ const state = {
     hearts: 3,
     currentQuestion: null,
     lettersLeft: LETTER_ATTEMPTS,
-    guessedLetters: new Set(),
+    wrongLetters: new Set(),
     correctLettersRevealed: new Set(),
     rescueUsed: false,
     questionsAnswered: 0,
@@ -243,7 +243,11 @@ function showScreen(name) {
 // ---- Run lifecycle ----
 
 function startRun(category, difficultyMode) {
-  const pool = getQuestionsForCategory(category);
+  const allCategoryQuestions = getQuestionsForCategory(category);
+  const isFixedDifficulty = difficultyMode === "easy" || difficultyMode === "medium" || difficultyMode === "hard";
+  const pool = isFixedDifficulty
+    ? allCategoryQuestions.filter((q) => q.difficulty === difficultyMode)
+    : allCategoryQuestions;
 
   if (pool.length === 0) {
     alert(`No questions available yet for "${category}". Try another category!`);
@@ -488,23 +492,41 @@ function loadNextQuestion() {
     run.usedIndices = new Set();
   }
 
-  const targetDifficulty = pickNextDifficulty(run.runPoints, run.difficultyMode);
+  const isFixedDifficulty =
+    run.difficultyMode === "easy" || run.difficultyMode === "medium" || run.difficultyMode === "hard";
 
   let nextIndex = -1;
-  for (let i = 0; i < run.questionsPool.length; i++) {
-    if (!run.usedIndices.has(i) && run.questionsPool[i].difficulty === targetDifficulty) {
-      nextIndex = i;
-      break;
-    }
-  }
-  if (nextIndex === -1) {
+
+  if (isFixedDifficulty) {
+    // Pool is already homogeneous (pre-filtered in startRun) — just walk the
+    // shuffled order and take the next unused entry.
     for (let i = 0; i < run.questionsPool.length; i++) {
       if (!run.usedIndices.has(i)) {
         nextIndex = i;
         break;
       }
     }
+  } else {
+    // Progressive/random: roll a difficulty, then find the next unused
+    // question matching it in shuffled order.
+    const targetDifficulty = pickNextDifficulty(run.runPoints, run.difficultyMode);
+    for (let i = 0; i < run.questionsPool.length; i++) {
+      if (!run.usedIndices.has(i) && run.questionsPool[i].difficulty === targetDifficulty) {
+        nextIndex = i;
+        break;
+      }
+    }
+    if (nextIndex === -1) {
+      // No unused question left at the rolled difficulty — fall back to any unused one.
+      for (let i = 0; i < run.questionsPool.length; i++) {
+        if (!run.usedIndices.has(i)) {
+          nextIndex = i;
+          break;
+        }
+      }
+    }
   }
+
   if (nextIndex === -1) nextIndex = 0;
   run.usedIndices.add(nextIndex);
 
@@ -512,7 +534,7 @@ function loadNextQuestion() {
 
   run.currentQuestion = run.questionsPool[nextIndex];
   run.lettersLeft = LETTER_ATTEMPTS;
-  run.guessedLetters = new Set();
+  run.wrongLetters = new Set();
   run.correctLettersRevealed = new Set();
   run.rescueUsed = false;
 
@@ -677,22 +699,21 @@ function syncKeyboardState() {
   const run = state.currentRun;
   const answer = run.currentQuestion.answer;
 
+  // Correct keys stay enabled/re-pressable — a letter can appear more than
+  // once, so finding one occurrence shouldn't block tapping it again.
   run.correctLettersRevealed.forEach((pos) => {
     const letter = answer[pos];
     const keyBtn = document.querySelector(`.key[data-letter="${letter}"]`);
     if (keyBtn) {
       keyBtn.classList.add("key--correct");
-      keyBtn.disabled = true;
     }
   });
 
-  run.guessedLetters.forEach((letter) => {
-    if (!answer.includes(letter)) {
-      const keyBtn = document.querySelector(`.key[data-letter="${letter}"]`);
-      if (keyBtn) {
-        keyBtn.classList.add("key--wrong");
-        keyBtn.disabled = true;
-      }
+  run.wrongLetters.forEach((letter) => {
+    const keyBtn = document.querySelector(`.key[data-letter="${letter}"]`);
+    if (keyBtn) {
+      keyBtn.classList.add("key--wrong");
+      keyBtn.disabled = true;
     }
   });
 }
@@ -884,7 +905,6 @@ function renderGameScreen() {
       const firstPos = answerLetterPositions(q.answer)[0];
       if (firstPos !== undefined) {
         run.correctLettersRevealed.add(firstPos);
-        run.guessedLetters.add(q.answer[firstPos]);
       }
     }
 
@@ -905,47 +925,36 @@ function triggerShake() {
   setTimeout(() => el.classList.remove("shake"), 400);
 }
 
-function revealLetterBoxes(positions) {
+function revealLetterBox(pos) {
   const answer = state.currentRun.currentQuestion.answer;
-  positions.forEach((pos, idx) => {
-    setTimeout(() => {
-      const box = document.querySelector(`.letter-box[data-index="${pos}"]`);
-      if (!box) return;
-      box.textContent = answer[pos];
-      box.classList.add("letter-box--revealed");
-    }, idx * 80);
-  });
+  const box = document.querySelector(`.letter-box[data-index="${pos}"]`);
+  if (!box) return;
+  box.textContent = answer[pos];
+  box.classList.add("letter-box--revealed");
+}
+
+function flashKeyGreen(keyBtn) {
+  if (!keyBtn) return;
+  keyBtn.classList.add("key--correct", "key--correct-flash");
+  setTimeout(() => keyBtn.classList.remove("key--correct-flash"), 500);
 }
 
 function handleKeyPress(letter) {
   const run = state.currentRun;
-  if (run.guessedLetters.has(letter)) return;
+  if (run.wrongLetters.has(letter)) return;
 
-  sounds.play("click");
-
-  run.guessedLetters.add(letter);
   const keyBtn = document.querySelector(`.key[data-letter="${letter}"]`);
   const answer = run.currentQuestion.answer;
 
-  const positions = [];
+  const positionsForLetter = [];
   for (let i = 0; i < answer.length; i++) {
-    if (answer[i] === letter) positions.push(i);
+    if (answer[i] === letter) positionsForLetter.push(i);
   }
 
-  if (positions.length > 0) {
-    positions.forEach((p) => run.correctLettersRevealed.add(p));
-    revealLetterBoxes(positions);
-    if (keyBtn) {
-      keyBtn.classList.add("key--correct");
-      keyBtn.disabled = true;
-    }
-
-    const required = answerLetterPositions(answer);
-    const isWin = required.every((i) => run.correctLettersRevealed.has(i));
-    if (isWin) {
-      setTimeout(() => handleRoundWin(), positions.length * 80 + 300);
-    }
-  } else {
+  if (positionsForLetter.length === 0) {
+    // Wrong letter — not in the word at all. Permanently greys out.
+    sounds.play("click");
+    run.wrongLetters.add(letter);
     run.lettersLeft -= 1;
     if (keyBtn) {
       keyBtn.classList.add("key--wrong");
@@ -959,6 +968,27 @@ function handleKeyPress(letter) {
     if (run.lettersLeft <= 0) {
       setTimeout(() => handleRoundLoss(), 300);
     }
+    return;
+  }
+
+  // Letter is in the answer — fill only the next unrevealed occurrence.
+  const nextPos = positionsForLetter.find((p) => !run.correctLettersRevealed.has(p));
+
+  sounds.play("click");
+
+  if (nextPos === undefined) {
+    // Every occurrence of this letter is already revealed — no-op, no penalty.
+    return;
+  }
+
+  run.correctLettersRevealed.add(nextPos);
+  revealLetterBox(nextPos);
+  flashKeyGreen(keyBtn);
+
+  const required = answerLetterPositions(answer);
+  const isWin = required.every((i) => run.correctLettersRevealed.has(i));
+  if (isWin) {
+    setTimeout(() => handleRoundWin(), 400);
   }
 }
 

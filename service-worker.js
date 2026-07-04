@@ -1,4 +1,4 @@
-const CACHE_NAME = "rameezas-trivia-v1";
+const CACHE_NAME = "rameezas-trivia-v2";
 
 // Deployed to GitHub Pages at https://tayyabsajjad3.github.io/wordle-trivia/,
 // so every cached path is prefixed with the /wordle-trivia/ project subdirectory.
@@ -37,7 +37,23 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Fetch: serve from cache, fall back to network
+// Fetch: network-first for questions.csv (so updated questions show up as soon
+// as she's online), cache-first for everything else (so offline still works).
 self.addEventListener("fetch", (event) => {
+  const url = event.request.url;
+
+  if (url.includes("questions.csv")) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));
 });
