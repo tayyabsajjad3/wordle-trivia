@@ -1,61 +1,791 @@
 category,difficulty,clue,answer,option2,option3,option4
 Geography,easy,Country shaped like a boot,ITALY,,,
 Geography,easy,Largest country in the world by area,RUSSIA,,,
+Geography,easy,Country famous for the pyramids of Giza,EGYPT,,,
 Geography,easy,Longest river in the world,NILE,,,
-Geography,medium,Capital city of Australia,CANBERRA,,,
-Geography,medium,Smallest country in the world by area,VATICAN CITY,,,
-Geography,medium,Country that gifted the Statue of Liberty to the USA,FRANCE,,,
-Geography,hard,Country with the most time zones in the world,FRANCE,Russia,USA,Canada
+Geography,easy,Country known as the Land of the Rising Sun,JAPAN,,,
+Geography,easy,Largest desert in the world,SAHARA,,,
+Geography,easy,Country famous for the Eiffel Tower,FRANCE,,,
+Geography,easy,Continent with the most countries,AFRICA,,,
+Geography,easy,Country famous for kangaroos and koalas,AUSTRALIA,,,
+Geography,easy,Smallest country in the world,VATICAN CITY,,,
+Geography,easy,Country famous for the Great Wall,CHINA,,,
+Geography,easy,Tallest mountain in the world,EVEREST,,,
+Geography,easy,Country shaped like a boot in the Mediterranean neighbors this island nation,SICILY,,,
+Geography,easy,Ocean between America and Europe,ATLANTIC,,,
+Geography,easy,Country famous for maple syrup and moose,CANADA,,,
+Geography,easy,City famous for canals and gondolas,VENICE,,,
+Geography,easy,Country home to the Amazon Rainforest,BRAZIL,,,
+Geography,medium,Capital of Australia,CANBERRA,,,
+Geography,medium,Only sea with no coastline,SARGASSO,,,
+Geography,medium,Country with the most natural lakes,CANADA,,,
+Geography,medium,African country never colonized by a European power,ETHIOPIA,,,
+Geography,medium,Strait separating Europe and Africa,GIBRALTAR,,,
+Geography,medium,Capital of Canada,OTTAWA,,,
+Geography,medium,Smallest continent by land area,AUSTRALIA,,,
+Geography,medium,Country with the most islands,SWEDEN,,,
+Geography,medium,Mountain range separating Europe and Asia,URAL,,,
+Geography,medium,Capital city built specifically to be a capital in Brazil,BRASILIA,,,
+Geography,medium,Only country located on two continents with its capital split between them,TURKEY,,,
+Geography,medium,Driest desert in the world,ATACAMA,,,
+Geography,medium,Country with the most time zones,FRANCE,,,
+Geography,medium,Lowest point on Earth's land surface,DEAD SEA,,,
+Geography,medium,River that flows through Egypt and 10 other countries,NILE,,,
+Geography,medium,Capital of Switzerland,BERN,,,
+Geography,medium,Largest freshwater lake by surface area,SUPERIOR,,,
+Geography,medium,Country nicknamed the Pearl of Africa,UGANDA,,,
+Geography,hard,Country with the most borders with other countries,CHINA,Russia,Brazil,Germany
+Geography,hard,Only US state that borders only one other state,MAINE,Alaska,Hawaii,Florida
+Geography,hard,Capital of Kazakhstan,ASTANA,Almaty,Bishkek,Tashkent
+Geography,hard,Only country whose flag is not rectangular,NEPAL,Switzerland,Vatican City,Bhutan
+Geography,hard,Smallest African country by area,SEYCHELLES,Gambia,Djibouti,Comoros
+Geography,hard,River that shares its name with a country in South America,PARAGUAY,Uruguay,Bolivia,Ecuador
+Geography,hard,Only country with a non-square or rectangular national flag border shape besides Nepal,SWITZERLAND,Vatican City,San Marino,Monaco
+Geography,hard,Highest capital city in the world,LA PAZ,Quito,Bogota,Kathmandu
+Geography,hard,Country that has land on two tectonic plates that are pulling apart,ICELAND,New Zealand,Chile,Japan
+Geography,hard,Narrowest country in the world by width,CHILE,Panama,Vietnam,Norway
+Geography,hard,Only country to span all four hemispheres,KIRIBATI,Indonesia,Ecuador,Brazil
+Geography,hard,Sea that is actually the world's largest lake,CASPIAN SEA,Dead Sea,Aral Sea,Black Sea
+Geography,hard,Country formerly known as Persia,IRAN,Iraq,Turkey,Syria
+Geography,hard,Capital of Sri Lanka,SRI JAYAWARDENEPURA KOTTE,Colombo,Kandy,Galle
+Geography,hard,Only sovereign country located entirely above the Arctic Circle line for part of its territory that also touches three oceans,RUSSIA,Canada,Norway,Iceland
+Geography,hard,Country with the longest coastline in the world,CANADA,Russia,Indonesia,Australia
+Science,easy,Planet known as the Red Planet,MARS,,,
 Science,easy,Gas humans need to breathe to survive,OXYGEN,,,
-Space|Science,easy,Planet known as the Red Planet,MARS,,,
-Science,medium,Element with the chemical symbol Au,GOLD,,,
-Science,medium,Powerhouse of the cell,MITOCHONDRIA,,,
-Science,hard,Metal that is liquid at room temperature,MERCURY,Lead,Tin,Zinc
-Movies,easy,1997 film about a ship that sinks,TITANIC,,,
-Movies,easy,Animated film about a lion prince,LION KING,,,
-Movies,medium,Studio known for Toy Story and Finding Nemo,PIXAR,,,
-Movies,medium,Pixar film about emotions inside a girl's mind,INSIDE OUT,,,
-Movies|Literature,hard,Author of the Harry Potter book series,ROWLING,Meyer,King,Collins
-Animals,easy,Largest land animal,ELEPHANT,,,
-Animals|Nature,easy,King of the jungle,LION,,,
-Animals|Nature,medium,Fastest land animal,CHEETAH,,,
-Animals,medium,African animal known for its black and white stripes,ZEBRA,,,
-Animals,hard,Only mammal capable of true powered flight,BAT,Squirrel,Lemur,Colugo
-History,easy,First President of the United States,WASHINGTON,,,
-History,easy,War fought between the North and South in the US,CIVIL WAR,,,
-History,medium,Ancient Egyptian ruler often buried in pyramids,PHARAOH,,,
-Space|History|Famous People,medium,First person to walk on the moon,ARMSTRONG,,,
-Food,easy,Fruit that keeps the doctor away,APPLE,,,
-Food,easy,Yellow fruit monkeys love,BANANA,,,
-Food,medium,Most expensive spice by weight made from crocus flowers,SAFFRON,,,
-Food,medium,Traditional Japanese dish of vinegared rice and raw fish,SUSHI,,,
-Music,easy,Instrument with black and white keys,PIANO,,,
-Music,medium,Composer who kept composing after losing his hearing,BEETHOVEN,,,
-Music,medium,Music genre that originated in Jamaica,REGGAE,,,
-Music,hard,Singer known as the King of Pop,JACKSON,Prince,Elvis,Madonna
+Science,easy,Force that pulls objects toward Earth,GRAVITY,,,
+Science,easy,Closest planet to the sun,MERCURY,,,
+Science,easy,Powerhouse of the cell,MITOCHONDRIA,,,
+Science,easy,Chemical symbol for water,H2O,,,
+Science,easy,Largest planet in our solar system,JUPITER,,,
+Science,easy,Gas plants absorb to make food,CARBON DIOXIDE,,,
+Science,easy,Study of living organisms,BIOLOGY,,,
+Science,easy,Number of bones in the adult human body,206,,,
+Science,easy,Organ that pumps blood through the body,HEART,,,
+Science,easy,Planet famous for its rings,SATURN,,,
+Science,easy,Scientist who developed the theory of evolution,DARWIN,,,
+Science,easy,State of matter with no fixed shape or volume,GAS,,,
+Science,easy,Process by which plants make their own food,PHOTOSYNTHESIS,,,
+Science,easy,Metal that is liquid at room temperature,MERCURY,,,
+Science,easy,Galaxy that contains our solar system,MILKY WAY,,,
+Science,medium,Chemical symbol for gold,AU,,,
+Science,medium,Speed at which light travels in a vacuum in km per second approximately,300000,,,
+Science,medium,Scientist who proposed the theory of relativity,EINSTEIN,,,
+Science,medium,Smallest unit of life,CELL,,,
+Science,medium,Gas that makes up most of Earth's atmosphere,NITROGEN,,,
+Science,medium,Part of the eye that controls how much light enters,IRIS,,,
+Science,medium,Hardest naturally occurring substance on Earth,DIAMOND,,,
+Science,medium,Number of chambers in the human heart,4,,,
+Science,medium,Unit used to measure the intensity of earthquakes,RICHTER SCALE,,,
+Science,medium,Blood type considered the universal donor,O NEGATIVE,,,
+Science,medium,Planet that spins on its side compared to others,URANUS,,,
+Science,medium,Vitamin produced when skin is exposed to sunlight,VITAMIN D,,,
+Science,medium,Term for an animal that eats only plants,HERBIVORE,,,
+Science,medium,Scientific name for the study of weather,METEOROLOGY,,,
+Science,medium,Part of the brain responsible for balance and coordination,CEREBELLUM,,,
+Science,medium,Chemical element with the symbol Fe,IRON,,,
+Science,medium,Process by which water changes from liquid to gas,EVAPORATION,,,
+Science,hard,Element with the highest melting point of all elements,TUNGSTEN,Titanium,Platinum,Osmium
+Science,hard,Only planet in our solar system that rotates clockwise,VENUS,Mars,Mercury,Uranus
+Science,hard,Human bone that never stops growing throughout life,EAR BONES,Jaw bone,Skull,Ribs
+Science,hard,Percentage of the human brain that is water approximately,73 PERCENT,50 percent,90 percent,60 percent
+Science,hard,Scientist credited with discovering penicillin,FLEMING,Pasteur,Curie,Koch
+Science,hard,Gas that gives the planet Neptune its blue color,METHANE,Nitrogen,Hydrogen,Helium
+Science,hard,Only organ in the human body that can regenerate itself completely,LIVER,Kidney,Skin,Lungs
+Science,hard,Chemical element that is the main component of natural gas,METHANE,Ethane,Propane,Butane
+Science,hard,Animal with the largest brain relative to body size,SHREW,Human,Dolphin,Ant
+Science,hard,Number of hearts an octopus has,3,1,2,4
+Science,hard,Layer of the sun visible during a total solar eclipse,CORONA,Photosphere,Chromosphere,Core
+Science,hard,Element that makes up the majority of the sun's mass,HYDROGEN,Helium,Oxygen,Carbon
+Science,hard,Only mammal capable of true flight,BAT,Flying squirrel,Sugar glider,Colugo
+Science,hard,Term for the boundary of a black hole from which nothing can escape,EVENT HORIZON,Singularity,Photon sphere,Accretion disk
+Science,hard,Human sense that is most closely linked to memory,SMELL,Sight,Hearing,Touch
+Science,hard,Approximate age of planet Earth in billions of years,4.5,3.5,5.5,6.5
+Movies,easy,Movie about a young lion who runs away from home,THE LION KING,,,
+Movies,easy,Film featuring a clownfish searching for his son,FINDING NEMO,,,
+Movies,easy,Movie where toys come to life when humans leave,TOY STORY,,,
+Movies,easy,Film about a boy who discovers he is a wizard,HARRY POTTER,,,
+Movies,easy,Movie featuring a giant ape climbing a skyscraper,KING KONG,,,
+Movies,easy,Disney film about a princess who sleeps after eating a poisoned apple,SNOW WHITE,,,
+Movies,easy,Movie about a shark terrorizing a beach town,JAWS,,,
+Movies,easy,Film set on a sinking ocean liner,TITANIC,,,
+Movies,easy,Animated movie about a rat who wants to be a chef,RATATOUILLE,,,
+Movies,easy,Movie about a superhero bitten by a radioactive spider,SPIDER-MAN,,,
+Movies,easy,Film featuring a wizard named Gandalf and a hobbit,THE LORD OF THE RINGS,,,
+Movies,easy,Disney movie about a mermaid who wants to be human,THE LITTLE MERMAID,,,
+Movies,easy,Movie where a man is frozen and wakes up years later,CAPTAIN AMERICA,,,
+Movies,easy,Film about a wooden puppet who wants to be a real boy,PINOCCHIO,,,
+Movies,easy,Movie about a family of superheroes who must hide their powers,THE INCREDIBLES,,,
+Movies,easy,Film featuring talking snowman named Olaf,FROZEN,,,
+Movies,easy,Movie about a velociraptor-filled island park,JURASSIC PARK,,,
+Movies,medium,Director of Inception and The Dark Knight,NOLAN,,,
+Movies,medium,Actor who played Iron Man in the Marvel films,DOWNEY,,,
+Movies,medium,Film that won the first ever Academy Award for Best Picture,WINGS,,,
+Movies,medium,Highest grossing film of all time as of 2025,AVATAR,,,
+Movies,medium,Movie featuring the line "Here's looking at you kid",CASABLANCA,,,
+Movies,medium,Film about a man raised by wolves in the jungle,THE JUNGLE BOOK,,,
+Movies,medium,Actor who played the Joker in The Dark Knight,LEDGER,,,
+Movies,medium,Country where the Bollywood film industry is based,INDIA,,,
+Movies,medium,Film that introduced the world to the character James Bond,DR NO,,,
+Movies,medium,Animated film about a panda who becomes a kung fu master,KUNG FU PANDA,,,
+Movies,medium,Movie where the main character says "I'll be back",THE TERMINATOR,,,
+Movies,medium,Director of Schindler's List and Jurassic Park,SPIELBERG,,,
+Movies,medium,Director who made Rear Window Vertigo and North by Northwest,HITCHCOCK,,,
+Movies,medium,First Pixar feature film,TOY STORY,,,
+Movies,medium,Actor who has won the most Academy Awards for Best Actor,DANIEL DAY-LEWIS,,,
+Movies,medium,Movie that popularized the phrase "May the Force be with you",STAR WARS,,,
+Movies,hard,Film that holds the record for most Academy Award wins tied at 11,TITANIC,Ben-Hur,Lord of the Rings,All About Eve
+Movies,hard,Director of Pulp Fiction and Kill Bill,TARANTINO,Scorsese,Kubrick,Fincher
+Movies,hard,Country of origin of the film Parasite which won Best Picture in 2020,SOUTH KOREA,Japan,China,Thailand
+Movies,hard,Actor who turned down the role of Neo in The Matrix,WILL SMITH,Brad Pitt,Tom Cruise,Nicolas Cage
+Movies,hard,Film that invented the term "blockbuster",JAWS,Star Wars,Titanic,Jurassic Park
+Movies,hard,Only animated film ever nominated for the Academy Award for Best Picture before a separate category existed,BEAUTY AND THE BEAST,The Lion King,Toy Story,Bambi
+Movies,hard,Director known for never using digital effects preferring practical effects,CHRISTOPHER NOLAN,James Cameron,Ridley Scott,Peter Jackson
+Movies,hard,First film ever to gross $1 billion at the box office,TITANIC,Jurassic Park,Star Wars,The Lion King
+Movies,hard,Movie where a fictional African country Wakanda first appeared,BLACK PANTHER,Avengers Infinity War,Captain America Civil War,Thor Ragnarok
+Movies,hard,Alfred Hitchcock film famous for the shower scene with screeching violins,PSYCHO,Vertigo,Rear Window,The Birds
+Movies,hard,Film that coined the term "MacGuffin" referring to a plot device,THE 39 STEPS,Psycho,Rear Window,Vertigo
+Movies,hard,Actor who played both Bruce Wayne and Patrick Bateman in different films,CHRISTIAN BALE,Ben Affleck,Michael Keaton,Val Kilmer
+Movies,hard,First feature length film to be entirely computer animated,TOY STORY,A Bug's Life,Antz,The Incredibles
+Movies,hard,Movie studio that produced Gone With the Wind,SELZNICK INTERNATIONAL,MGM,Paramount,Warner Bros
+Movies,hard,Film score composer who wrote the music for Star Wars and Indiana Jones,JOHN WILLIAMS,Hans Zimmer,Ennio Morricone,Danny Elfman
+Movies,hard,Country that submits the most films to the Academy Award for Best International Feature Film,FRANCE,Italy,Germany,Spain
+Animals,easy,Fastest land animal on Earth,CHEETAH,,,
+Animals,easy,Largest mammal on Earth,BLUE WHALE,,,
+Animals,easy,Animal known as the King of the Jungle,LION,,,
+Animals,easy,Only mammal that can truly fly,BAT,,,
+Animals,easy,Tallest animal on Earth,GIRAFFE,,,
+Animals,easy,Animal with black and white stripes,ZEBRA,,,
+Animals,easy,Animal that carries its young in a pouch,KANGAROO,,,
+Animals,easy,Largest land animal on Earth,ELEPHANT,,,
+Animals,easy,Animal famous for its ability to change color,CHAMELEON,,,
+Animals,easy,Animal that builds dams in rivers,BEAVER,,,
+Animals,easy,Bird that cannot fly but can run very fast,OSTRICH,,,
+Animals,easy,Sea animal with eight arms,OCTOPUS,,,
+Animals,easy,Animal that sleeps standing up,HORSE,,,
+Animals,easy,Insect that produces honey,BEE,,,
+Animals,easy,Animal with the longest neck,GIRAFFE,,,
+Animals,easy,Dog breed famous for its wrinkled face,BULLDOG,,,
+Animals,easy,Animal famous for its black eye patches and love of bamboo,PANDA,,,
+Animals,medium,Group of lions is called a,PRIDE,,,
+Animals,medium,Group of crows is called a,MURDER,,,
+Animals,medium,Animal with the longest lifespan,TORTOISE,,,
+Animals,medium,Only bird that can fly backwards,HUMMINGBIRD,,,
+Animals,medium,Animal whose fingerprints are indistinguishable from human fingerprints,KOALA,,,
+Animals,medium,Number of hearts an octopus has,3,,,
+Animals,medium,Heaviest snake in the world,GREEN ANACONDA,,,
+Animals,medium,Animal known for sleeping up to 22 hours per day,KOALA,,,
+Animals,medium,Only mammal born with its eyes open and able to walk within minutes,WILDEBEEST,,,
+Animals,medium,Collective name for a group of flamingos,FLAMBOYANCE,,,
+Animals,medium,Animal that has the same number of neck bones as a human despite its long neck,GIRAFFE,,,
+Animals,medium,Fastest bird in level flight,SWIFT,,,
+Animals,medium,Animal whose tongue is longer than its body,CHAMELEON,,,
+Animals,medium,Marine animal that has no brain heart or blood,JELLYFISH,,,
+Animals,medium,Only continent with no native species of ants,ANTARCTICA,,,
+Animals,medium,Animal that cannot vomit due to its digestive system,HORSE,,,
+Animals,medium,Collective name for a group of owls,PARLIAMENT,,,
+Animals,hard,Animal with the strongest bite force relative to size,TASMANIAN DEVIL,Hyena,Crocodile,Jaguar
+Animals,hard,Only snake that builds a nest for its eggs,KING COBRA,Anaconda,Python,Boa constrictor
+Animals,hard,Animal that has blue blood due to copper based hemocyanin,HORSESHOE CRAB,Octopus,Lobster,Spider
+Animals,hard,Collective name for a group of hedgehogs,ARRAY,Prickle,Bundle,Cluster
+Animals,hard,Animal that can detect the Earth's magnetic field and uses it to navigate,PIGEON,Shark,Salmon,All of these
+Animals,hard,Only fish that swims upright,SEAHORSE,Pufferfish,Anglerfish,Clownfish
+Animals,hard,Number of eyelids a camel has,3,2,1,4
+Animals,hard,Animal that produces the loudest sound of any living creature,SPERM WHALE,Blue whale,Howler monkey,Elephant
+Animals,hard,Collective name for a group of pandas,EMBARRASSMENT,Pride,Bamboo,Pack
+Animals,hard,Animal whose closest living relative is the elephant despite looking nothing like one,HYRAX,Mammoth,Manatee,Tapir
+Animals,hard,Only venomous mammal in the world,PLATYPUS,Shrew,Slow loris,Vampire bat
+Animals,hard,Animal that sleeps with one half of its brain at a time,DOLPHIN,Whale,Seal,Sea lion
+Animals,hard,Animal that can survive being frozen completely solid and then thaw back to life,WOOD FROG,Tardigrade,Arctic fox,Salamander
+Animals,hard,Only animal besides humans known to engage in warfare against its own species,CHIMPANZEE,Wolf,Ant,Crow
+Animals,hard,Animal with the most teeth of any mammal,GIANT ARMADILLO,Opossum,Dolphin,Manatee
+Animals,hard,Bird with the longest migration of any animal travelling pole to pole annually,ARCTIC TERN,Bar-tailed godwit,Sooty shearwater,Albatross
+History,easy,First president of the United States,WASHINGTON,,,
+History,easy,Year World War Two ended,1945,,,
+History,easy,Country that built the Great Wall,CHINA,,,
+History,easy,Ancient wonder of the world still standing today,PYRAMIDS,,,
+History,easy,Leader of Nazi Germany during World War Two,HITLER,,,
+History,easy,First woman to win a Nobel Prize,CURIE,,,
+History,easy,War fought between the North and South of America,CIVIL WAR,,,
+History,easy,Country that Christopher Columbus sailed for when he discovered America,SPAIN,,,
+History,easy,Year the Berlin Wall fell,1989,,,
+History,easy,Roman leader who was assassinated on the Ides of March,CAESAR,,,
+History,easy,Country that launched the first human into space,SOVIET UNION,,,
+History,easy,Nationality of Napoleon Bonaparte,FRENCH,,,
+History,easy,Ancient city destroyed by the volcano Vesuvius,POMPEII,,,
+History,easy,Ship that sank on its maiden voyage in 1912,TITANIC,,,
+History,easy,Queen of ancient Egypt famous for her beauty and political power,CLEOPATRA,,,
+History,easy,Country where the Renaissance began,ITALY,,,
+History,easy,Year man first walked on the moon,1969,,,
+History,medium,First country to give women the right to vote,NEW ZEALAND,,,
+History,medium,Battle that ended Napoleon's rule in 1815,WATERLOO,,,
+History,medium,Ancient empire known for its legal code hammurabi,BABYLON,,,
+History,medium,Leader who freed slaves in the United States,LINCOLN,,,
+History,medium,Year the French Revolution began,1789,,,
+History,medium,Country that gifted the Statue of Liberty to America,FRANCE,,,
+History,medium,First Emperor of a unified China,QIN SHI HUANG,,,
+History,medium,Treaty that ended World War One,TREATY OF VERSAILLES,,,
+History,medium,Ancient Greek city-state famous for its warriors,SPARTA,,,
+History,medium,Leader of the Cuban Revolution,CASTRO,,,
+History,medium,Country where the Aztec Empire was located,MEXICO,,,
+History,medium,Year the Titanic sank,1912,,,
+History,medium,First person to circumnavigate the globe,MAGELLAN,,,
+History,medium,Ancient wonder that was a giant statue at the entrance of a harbor in Rhodes,COLOSSUS,,,
+History,medium,Decade in which the Cold War began,1940S,,,
+History,medium,Country that ruled India before its independence in 1947,BRITAIN,,,
+History,medium,Dynasty that built the Taj Mahal,MUGHAL,,,
+History,hard,Year the Magna Carta was signed,1215,1066,1348,1415
+History,hard,Country that first used gunpowder as a weapon,CHINA,Japan,Persia,Arabia
+History,hard,Roman Emperor who first converted to Christianity,CONSTANTINE,Nero,Augustus,Hadrian
+History,hard,Name of the operation that was the Allied invasion of Normandy in 1944,OPERATION OVERLORD,Operation Barbarossa,Operation Market Garden,Operation Sea Lion
+History,hard,Ancient civilization that invented the wheel,SUMER,Egypt,Indus Valley,Babylon
+History,hard,Year the Ottoman Empire officially ended,1922,1918,1923,1920
+History,hard,Country that was the first to abolish slavery,HAITI,Britain,France,Denmark
+History,hard,Leader who ordered the construction of the Berlin Wall,KHRUSHCHEV,Stalin,Ulbricht,Brezhnev
+History,hard,Name of the first nuclear bomb dropped on Japan,LITTLE BOY,Fat Man,Big Bang,Trinity
+History,hard,Ancient Greek philosopher who was the teacher of Alexander the Great,ARISTOTLE,Plato,Socrates,Pythagoras
+History,hard,Year the printing press was invented by Gutenberg,1440,1350,1500,1492
+History,hard,Country where the Black Death originated before spreading to Europe,CHINA,India,Egypt,Mongolia
+History,hard,First country to send a satellite into space,SOVIET UNION,United States,Germany,France
+History,hard,Ancient battle where the Persians were defeated by the Greeks against overwhelming odds,MARATHON,Thermopylae,Salamis,Plataea
+History,hard,Decade in which the League of Nations was founded,1920S,1910s,1930s,1900s
+History,hard,Roman road that ran from Rome to the southern tip of Italy,APPIAN WAY,Via Flaminia,Silk Road,Via Aurelia
+Food,easy,Country where sushi originated,JAPAN,,,
+Food,easy,Main ingredient in guacamole,AVOCADO,,,
+Food,easy,Spice that makes food yellow often used in curry,TURMERIC,,,
+Food,easy,Fruit that is also a vegetable when used in savory cooking,TOMATO,,,
+Food,easy,Country famous for inventing pizza,ITALY,,,
+Food,easy,Main ingredient in hummus,CHICKPEAS,,,
+Food,easy,Drink made from fermented grapes,WINE,,,
+Food,easy,Nut used to make peanut butter,PEANUT,,,
+Food,easy,Country of origin of croissants,FRANCE,,,
+Food,easy,Spice made from the stigmas of a flower and the most expensive by weight,SAFFRON,,,
+Food,easy,Fruit that is actually a berry botanically speaking,BANANA,,,
+Food,easy,Country famous for fish and chips,ENGLAND,,,
+Food,easy,Main ingredient in chocolate,COCOA,,,
+Food,easy,Type of pasta shaped like little ears,ORECCHIETTE,,,
+Food,easy,Country of origin of paella,SPAIN,,,
+Food,easy,Liquid produced by bees,HONEY,,,
+Food,easy,Fruit with seeds on the outside,STRAWBERRY,,,
+Food,medium,Spice that comes from the bark of a tree,CINNAMON,,,
+Food,medium,Country that consumes the most coffee per capita,FINLAND,,,
+Food,medium,Cooking technique that involves cooking food sealed in a bag in a water bath,SOUS VIDE,,,
+Food,medium,Vitamin found in abundance in citrus fruits,VITAMIN C,,,
+Food,medium,Country of origin of kimchi,KOREA,,,
+Food,medium,Type of cheese with blue veins traditionally made in caves,ROQUEFORT,,,
+Food,medium,Nut that is technically a seed and the most consumed nut in the world,PEANUT,,,
+Food,medium,Country that produces the most coffee in the world,BRAZIL,,,
+Food,medium,Cooking method where food is cooked in its own steam inside a closed container,BRAISING,,,
+Food,medium,Spice derived from dried unripe berries that tastes like a mix of cinnamon cloves and nutmeg,ALLSPICE,,,
+Food,medium,Country of origin of croissants despite France being famous for them,AUSTRIA,,,
+Food,medium,Main grain used to make traditional Japanese sake,RICE,,,
+Food,medium,Country that produces the most chocolate in the world by raw cocoa beans,IVORY COAST,,,
+Food,medium,Fermented Korean paste made from soybeans,DOENJANG,,,
+Food,medium,Type of oil extracted from pressing olives,OLIVE OIL,,,
+Food,medium,Country that invented the hamburger,GERMANY,,,
+Food,medium,Cooking term for browning meat quickly at high heat to seal in juices,SEARING,,,
+Food,hard,Only fruit that contains bromelain an enzyme that digests protein,PINEAPPLE,Papaya,Kiwi,Mango
+Food,hard,Country that invented the chocolate chip cookie,UNITED STATES,Switzerland,Belgium,France
+Food,hard,Type of flour with the highest protein content used for bread,BREAD FLOUR,All-purpose flour,Cake flour,Semolina
+Food,hard,Country of origin of the Michelin Guide rating restaurants,FRANCE,Italy,Spain,United Kingdom
+Food,hard,Spice that was once so valuable it was used as currency,PEPPER,Saffron,Nutmeg,Cinnamon
+Food,hard,Cooking technique where food is briefly boiled then plunged into ice water,BLANCHING,Poaching,Steaming,Scalding
+Food,hard,Country that consumes the most meat per capita,ARGENTINA,United States,Australia,Uruguay
+Food,hard,Japanese fermented soybean dish with a strong smell,NATTO,Miso,Tofu,Edamame
+Food,hard,Only common food that never expires and never needs refrigeration,HONEY,Salt,Sugar,Dried beans
+Food,hard,Region of Italy where Parmigiano-Reggiano cheese must be produced,EMILIA-ROMAGNA,Tuscany,Lombardy,Veneto
+Food,hard,Country that produces the most tea in the world,CHINA,India,Sri Lanka,Kenya
+Food,hard,Cooking method used to make traditional French duck confit,SLOW COOKING IN FAT,Braising,Roasting,Smoking
+Food,hard,Fruit that releases ethylene gas causing other fruits to ripen faster,APPLE,Banana,Avocado,Pear
+Food,hard,Country that invented tempura cooking technique now associated with Japan,PORTUGAL,Spain,Netherlands,Britain
+Food,hard,Type of sugar that makes fruit taste sweet,FRUCTOSE,Glucose,Sucrose,Lactose
+Food,hard,Country of origin of the Caesar salad,MEXICO,United States,Italy,Canada
+Music,easy,Musical instrument with 88 keys,PIANO,,,
+Music,easy,King of Pop,MICHAEL JACKSON,,,
+Music,easy,Country where reggae music originated,JAMAICA,,,
+Music,easy,Famous band from Liverpool that changed music in the 1960s,THE BEATLES,,,
+Music,easy,Musical symbol that indicates how loud or soft to play,DYNAMIC,,,
+Music,easy,Famous singer known as the Queen of Pop,MADONNA,,,
+Music,easy,String instrument played with a bow,VIOLIN,,,
+Music,easy,Type of music associated with New Orleans and jazz funerals,JAZZ,,,
+Music,easy,Famous rock band known for Bohemian Rhapsody,QUEEN,,,
+Music,easy,Number of strings on a standard guitar,6,,,
+Music,easy,Famous singer known as the Voice who sang I Will Always Love You,WHITNEY HOUSTON,,,
+Music,easy,Country where K-pop music originated,SOUTH KOREA,,,
+Music,easy,Musical term for playing very softly,PIANO,,,
+Music,easy,Famous rapper born Shawn Carter,JAY-Z,,,
+Music,easy,Instrument traditionally associated with Scotland,BAGPIPES,,,
+Music,easy,Famous band known for Hotel California,EAGLES,,,
+Music,easy,Classical composer who was deaf when he wrote his Ninth Symphony,BEETHOVEN,,,
+Music,medium,Musical key with no sharps or flats,C MAJOR,,,
+Music,medium,First music streaming service to reach 100 million subscribers,SPOTIFY,,,
+Music,medium,Country that gave birth to the tango,ARGENTINA,,,
+Music,medium,Famous composer known as the father of classical music,BACH,,,
+Music,medium,Music genre that combines rhythm and blues with electronic production,R&B,,,
+Music,medium,Singer who holds the record for most Grammy Awards ever won,BEYONCE,,,
+Music,medium,Musical term for gradually getting louder,CRESCENDO,,,
+Music,medium,Country of origin of Flamenco music and dance,SPAIN,,,
+Music,medium,Famous singer known as Slim Shady,EMINEM,,,
+Music,medium,Decade when hip-hop music was invented,1970S,,,
+Music,medium,Classical composer known for The Four Seasons,VIVALDI,,,
+Music,medium,Musical instrument family that includes the trumpet and trombone,BRASS,,,
+Music,medium,First band to sell out Wembley Stadium,THE ROLLING STONES,,,
+Music,medium,Country that invented the piano,ITALY,,,
+Music,medium,Famous singer whose real name is Robyn Fenty,RIHANNA,,,
+Music,medium,Musical scale with five notes per octave common in Asian music,PENTATONIC,,,
+Music,hard,Musical term for the speed at which a piece of music is played,TEMPO,Rhythm,Meter,Beat
+Music,hard,Classical composer who wrote the opera The Magic Flute,MOZART,Beethoven,Bach,Haydn
+Music,hard,Country of origin of the musical genre Bossa Nova,BRAZIL,Cuba,Argentina,Colombia
+Music,hard,Musician who invented the electric guitar pickup,CHARLIE CHRISTIAN,Les Paul,Leo Fender,Eddie Van Halen
+Music,hard,Number of symphonies Beethoven completed,9,7,10,8
+Music,hard,Famous musician whose real name was Prince Rogers Nelson,PRINCE,Stevie Wonder,Jimi Hendrix,David Bowie
+Music,hard,Music genre that originated in Detroit in the 1980s,TECHNO,House,Drum and bass,Trance
+Music,hard,Musical interval consisting of twelve semitones,OCTAVE,Fifth,Fourth,Seventh
+Music,hard,Country that gave birth to the musical genre of Afrobeat,NIGERIA,Ghana,South Africa,Senegal
+Music,hard,Year Elvis Presley released his first single That's Alright Mama,1954,1956,1952,1958
+Music,hard,Classical composer known for writing the Moonlight Sonata,BEETHOVEN,Chopin,Mozart,Schubert
+Music,hard,Famous musician who lost the tips of three fingers but continued playing guitar,DJANGO REINHARDT,Jerry Garcia,Tony Iommi,Les Paul
+Music,hard,Musical genre that combines traditional Irish music with punk rock,CELTIC PUNK,Folk rock,Skiffle,Ceilidh
+Music,hard,First music video ever played on MTV,VIDEO KILLED THE RADIO STAR,Thriller,Bohemian Rhapsody,Jump
+Music,hard,Country of origin of the musical genre Cumbia,COLOMBIA,Mexico,Peru,Venezuela
+Music,hard,Instrument that Wolfgang Amadeus Mozart began playing publicly at age 5,HARPSICHORD,Piano,Violin,Flute
 Sports,easy,Sport played at Wimbledon,TENNIS,,,
-Sports,easy,Sport where players hit a puck with a stick,HOCKEY,,,
-Sports,medium,Number of players on a soccer team on the field,ELEVEN,,,
-Sports,hard,Country that has won the most FIFA World Cup titles,BRAZIL,Germany,Italy,Argentina
+Sports,easy,Number of players in a football soccer team,11,,,
+Sports,easy,Country that has won the most FIFA World Cups,BRAZIL,,,
+Sports,easy,Sport where you score a hole in one,GOLF,,,
+Sports,easy,Sport played on ice with a puck,HOCKEY,,,
+Sports,easy,Country that invented basketball,UNITED STATES,,,
+Sports,easy,Sport associated with Muhammad Ali,BOXING,,,
+Sports,easy,Number of rings on the Olympic flag,5,,,
+Sports,easy,Sport where a perfect score is 300,BOWLING,,,
+Sports,easy,Country where the Olympic Games originated in ancient times,GREECE,,,
+Sports,easy,Sport famous for its yellow jersey in the Tour de France,CYCLING,,,
+Sports,easy,Number of players on a basketball team on court at once,5,,,
+Sports,easy,Sport where you use a shuttlecock,BADMINTON,,,
+Sports,easy,Country that invented cricket,ENGLAND,,,
+Sports,easy,Sport where players score touchdowns,AMERICAN FOOTBALL,,,
+Sports,easy,Most watched sporting event in the world,FIFA WORLD CUP,,,
+Sports,easy,Sport where the term love means zero,TENNIS,,,
+Sports,medium,Country that has won the most Olympic gold medals overall,UNITED STATES,,,
+Sports,medium,Sport where you perform a slam dunk,BASKETBALL,,,
+Sports,medium,Year the first modern Olympic Games were held,1896,,,
+Sports,medium,Country of origin of the sport of rugby,ENGLAND,,,
+Sports,medium,Fastest ball sport in the world,BADMINTON,,,
+Sports,medium,Sport where players use a broom to sweep ice,CURLING,,,
+Sports,medium,Country that invented the martial art of Judo,JAPAN,,,
+Sports,medium,Distance of a standard marathon in kilometres approximately,42,,,
+Sports,medium,Sport where you perform a triple axel,FIGURE SKATING,,,
+Sports,medium,Country where the Tour de France cycling race is held,FRANCE,,,
+Sports,medium,Sport associated with Roger Federer and Rafael Nadal,TENNIS,,,
+Sports,medium,Number of holes in a standard golf course,18,,,
+Sports,medium,Country that invented volleyball,UNITED STATES,,,
+Sports,medium,Sport where you score an ace,TENNIS,,,
+Sports,medium,First country to win football World Cup three times,BRAZIL,,,
+Sports,medium,Sport where the Stanley Cup is awarded,ICE HOCKEY,,,
+Sports,hard,Year women were first allowed to compete in the Olympic Games,1900,1896,1920,1912
+Sports,hard,Country that has hosted the most Summer Olympic Games,UNITED STATES,Britain,France,Germany
+Sports,hard,Sport where the Fosbury Flop technique revolutionized high jumping,HIGH JUMP,Long jump,Pole vault,Triple jump
+Sports,hard,Country of origin of the sport of Polo,PERSIA,India,Britain,Argentina
+Sports,hard,Only country to have participated in every single Summer Olympic Games,GREECE,Britain,France,Australia
+Sports,hard,Number of dimples on a standard golf ball approximately,336,108,420,250
+Sports,hard,Sport where the term deuce means both players are tied at 40 points each,TENNIS,Badminton,Table tennis,Squash
+Sports,hard,Country that invented the sport of Sumo wrestling,JAPAN,China,Korea,Mongolia
+Sports,hard,Sport where you compete in a velodrome,TRACK CYCLING,Roller derby,Speedskating,BMX racing
+Sports,hard,First African country to host the FIFA World Cup,SOUTH AFRICA,Nigeria,Egypt,Morocco
+Sports,hard,Sport where you perform a Fosbury Flop,HIGH JUMP,Triple jump,Pole vault,Long jump
+Sports,hard,Country of origin of the martial art of Taekwondo,SOUTH KOREA,Japan,China,Thailand
+Sports,hard,Year the first Super Bowl was played,1967,1970,1965,1972
+Sports,hard,Sport where players compete for the Ryder Cup,GOLF,Tennis,Cricket,Polo
+Sports,hard,Only person to win Olympic gold in both the 100m and 200m sprint at three consecutive Olympics,USAIN BOLT,Carl Lewis,Jesse Owens,Michael Johnson
+Sports,hard,Country that invented the sport of baseball according to most historians,UNITED STATES,Britain,Canada,Cuba
 Technology,easy,Company that makes the iPhone,APPLE,,,
-Technology,medium,Search engine and tech company owned by Alphabet,GOOGLE,,,
-Technology,hard,Inventor credited with creating the World Wide Web,BERNERS-LEE,Turing,Jobs,Gates
-Art,easy,Painter of the Mona Lisa,DA VINCI,,,
-Art,medium,Dutch painter famous for Starry Night,VAN GOGH,,,
-Art,hard,Art movement associated with Salvador Dali,SURREALISM,Cubism,Impressionism,Baroque
-Space,easy,Planet closest to the sun,MERCURY,,,
-Space,medium,Galaxy that contains our solar system,MILKY WAY,,,
-Space,hard,First artificial satellite launched into orbit,SPUTNIK,Apollo,Voyager,Hubble
+Technology,easy,Most popular search engine in the world,GOOGLE,,,
+Technology,easy,Social media platform known for short video content,TIKTOK,,,
+Technology,easy,Company founded by Mark Zuckerberg,FACEBOOK,,,
+Technology,easy,Device used to move the cursor on a computer screen,MOUSE,,,
+Technology,easy,What does CPU stand for,CENTRAL PROCESSING UNIT,,,
+Technology,easy,Company that makes Windows operating system,MICROSOFT,,,
+Technology,easy,Most visited website in the world,GOOGLE,,,
+Technology,easy,Programming language named after a snake,PYTHON,,,
+Technology,easy,Social media platform limited to short text messages,TWITTER,,,
+Technology,easy,Company that makes the Android operating system,GOOGLE,,,
+Technology,easy,Device that converts digital signals to audio,SPEAKER,,,
+Technology,easy,What does USB stand for,UNIVERSAL SERIAL BUS,,,
+Technology,easy,Company that makes the PlayStation gaming console,SONY,,,
+Technology,easy,First commercially successful smartphone,IPHONE,,,
+Technology,easy,Video streaming platform owned by Google,YOUTUBE,,,
+Technology,easy,What does RAM stand for,RANDOM ACCESS MEMORY,,,
+Technology,medium,Inventor of the World Wide Web,BERNERS-LEE,,,
+Technology,medium,Programming language primarily used for web page styling,CSS,,,
+Technology,medium,Company that created the Java programming language,SUN MICROSYSTEMS,,,
+Technology,medium,Year the first iPhone was released,2007,,,
+Technology,medium,Technology that allows devices to communicate without wires over short distances,BLUETOOTH,,,
+Technology,medium,First country to offer 5G mobile networks commercially,SOUTH KOREA,,,
+Technology,medium,Company that developed the first commercial database software,ORACLE,,,
+Technology,medium,Term for malicious software designed to damage computers,MALWARE,,,
+Technology,medium,Technology company whose logo is a multicolored window,MICROSOFT,,,
+Technology,medium,Programming paradigm that organizes code into objects,OBJECT ORIENTED,,,
+Technology,medium,Company that invented the first commercial microprocessor,INTEL,,,
+Technology,medium,Year the internet became publicly available,1991,,,
+Technology,medium,Technology that allows contactless payment with a phone,NFC,,,
+Technology,medium,Most widely used open source operating system,LINUX,,,
+Technology,medium,Company that created the Swift programming language,APPLE,,,
+Technology,medium,Protocol that assigns addresses to devices on a network,IP,,,
+Technology,hard,Year the first electronic computer ENIAC was completed,1945,1936,1950,1940
+Technology,hard,Company that invented the first hard disk drive,IBM,Seagate,Western Digital,Hitachi
+Technology,hard,Programming language created by James Gosling,JAVA,C++,Python,Ruby
+Technology,hard,Term for the practice of securing communications so only intended parties can read them,ENCRYPTION,Hashing,Compression,Tokenization
+Technology,hard,Company that developed the Kotlin programming language,JETBRAINS,Google,Apple,Microsoft
+Technology,hard,First social network to reach 1 billion users,FACEBOOK,MySpace,Twitter,Instagram
+Technology,hard,Technology that uses light to transmit data at high speeds,FIBER OPTIC,Coaxial,Ethernet,Microwave
+Technology,hard,Year the first commercial mobile phone call was made,1983,1990,1978,1985
+Technology,hard,Company that created the programming language Go,GOOGLE,Facebook,Amazon,Microsoft
+Technology,hard,Standard that defines how data is transmitted over the internet,TCP/IP,HTTP,FTP,SMTP
+Technology,hard,Country that invented the QR code,JAPAN,United States,China,South Korea
+Technology,hard,First computer virus to spread via the internet,MORRIS WORM,ILOVEYOU,Melissa,Code Red
+Technology,hard,Technology company whose headquarters is called the Googleplex,GOOGLE,Apple,Facebook,Amazon
+Technology,hard,Programming language used to create the original Unix operating system,C,Assembly,Fortran,Pascal
+Technology,hard,Year Bitcoin was invented,2009,2004,2012,2007
+Technology,hard,Company that developed the first graphical user interface for personal computers,XEROX,Apple,Microsoft,IBM
+Art,easy,Artist famous for painting the Mona Lisa,DA VINCI,,,
+Art,easy,Artist who cut off his own ear,VAN GOGH,,,
+Art,easy,Famous painting of a woman with a mysterious smile,MONA LISA,,,
+Art,easy,Artist who painted the Sistine Chapel ceiling,MICHELANGELO,,,
+Art,easy,Art movement known for melting clocks,SURREALISM,,,
+Art,easy,Country where Pablo Picasso was born,SPAIN,,,
+Art,easy,Primary colors in traditional painting,RED YELLOW BLUE,,,
+Art,easy,Famous sculpture of a naked young man by Michelangelo,DAVID,,,
+Art,easy,Art material made from pigments suspended in oil,OIL PAINT,,,
+Art,easy,Famous Japanese artist known for The Great Wave print,HOKUSAI,,,
+Art,easy,Art movement that rejected traditional styles in early 20th century,MODERNISM,,,
+Art,easy,Museum in Paris that houses the Mona Lisa,LOUVRE,,,
+Art,easy,Art technique of applying thick paint to create texture,IMPASTO,,,
+Art,easy,Famous American artist known for Campbell's soup can paintings,WARHOL,,,
+Art,easy,Art form involving arranging flowers,IKEBANA,,,
+Art,easy,Famous fresco of the Last Supper painted by Da Vinci,THE LAST SUPPER,,,
+Art,easy,Country where the Renaissance art movement began,ITALY,,,
+Art,medium,Art movement founded by Claude Monet emphasizing light and color,IMPRESSIONISM,,,
+Art,medium,Famous artist who used pointillism technique,SEURAT,,,
+Art,medium,Decade when the Pop Art movement emerged,1950S,,,
+Art,medium,Famous sculpture by Rodin showing a man deep in thought,THE THINKER,,,
+Art,medium,Art technique of creating images by embedding colored glass or tile,MOSAIC,,,
+Art,medium,Country where the artist Frida Kahlo was born,MEXICO,,,
+Art,medium,Art movement that preceded and influenced Surrealism,DADA,,,
+Art,medium,Famous painting by Edvard Munch showing a figure with an open mouth,THE SCREAM,,,
+Art,medium,Art form using a needle and thread on fabric,EMBROIDERY,,,
+Art,medium,Decade in which Pablo Picasso painted Guernica,1930S,,,
+Art,medium,Term for the technique of painting on wet plaster,FRESCO,,,
+Art,medium,Famous architect who designed the Guggenheim Museum in New York,WRIGHT,,,
+Art,medium,Art movement that focused on geometric shapes and primary colors,CUBISM,,,
+Art,medium,Famous street artist known for political stencil art,BANKSY,,,
+Art,medium,Country of origin of Bauhaus art and design movement,GERMANY,,,
+Art,medium,Type of art that uses everyday objects in unexpected ways,FOUND ART,,,
+Art,hard,Art movement characterized by precise realistic representation that emerged in opposition to Abstract Expressionism,PHOTOREALISM,Hyperrealism,New Realism,Neoclassicism
+Art,hard,Famous painting by Jan Vermeer showing a girl with a piece of jewelry,GIRL WITH A PEARL EARRING,Mona Lisa,The Milkmaid,Woman Reading a Letter
+Art,hard,Art technique where paint is applied with a palette knife instead of a brush,PALETTE KNIFE PAINTING,Impasto,Scumbling,Glazing
+Art,hard,Year Leonardo da Vinci began painting the Mona Lisa,1503,1489,1512,1495
+Art,hard,Country of origin of the Ukiyo-e woodblock printing style,JAPAN,China,Korea,Vietnam
+Art,hard,Artist who created the famous bronze sculpture The Thinker,RODIN,Michelangelo,Bernini,Brancusi
+Art,hard,Art movement that deliberately used chaotic violent brush strokes emerging after World War Two,ABSTRACT EXPRESSIONISM,Fauvism,Expressionism,Gestural abstraction
+Art,hard,Museum that contains the largest collection of art in the world,LOUVRE,Hermitage,Metropolitan,British Museum
+Art,hard,Famous painting by Salvador Dali showing melting watches in a landscape,THE PERSISTENCE OF MEMORY,Dream of Venus,Metamorphosis of Narcissus,Swans Reflecting Elephants
+Art,hard,Art movement that emerged in New York in the 1980s combining street art with fine art,NEO-EXPRESSIONISM,Graffiti art,Street art,Urban art
+Art,hard,Japanese art of paper folding,ORIGAMI,Kirigami,Temari,Furoshiki
+Art,hard,Country where the artist Jean-Michel Basquiat was born,UNITED STATES,Haiti,France,Brazil
+Art,hard,Art technique where images are created by layering torn pieces of paper,DECOUPAGE,Collage,Papier-mache,Scrapbooking
+Art,hard,Famous Dutch artist who sold only one painting during his lifetime,VAN GOGH,Vermeer,Rembrandt,Mondrian
+Art,hard,Art movement founded by Andre Breton that explored the unconscious mind,SURREALISM,Dadaism,Expressionism,Fauvism
+Art,hard,Country where the Uffizi Gallery housing Botticelli's Birth of Venus is located,ITALY,France,Spain,Greece
+Space,easy,Planet closest to Earth,VENUS,,,
+Space,easy,First human to walk on the moon,ARMSTRONG,,,
+Space,easy,Star at the center of our solar system,SUN,,,
+Space,easy,Space agency that sent humans to the moon,NASA,,,
+Space,easy,Name of the first satellite launched into space,SPUTNIK,,,
+Space,easy,Planet famous for having the Great Red Spot storm,JUPITER,,,
+Space,easy,Galaxy that contains our solar system,MILKY WAY,,,
+Space,easy,Dwarf planet once considered the ninth planet,PLUTO,,,
+Space,easy,Country that launched the first human into space,SOVIET UNION,,,
+Space,easy,Force that holds planets in orbit around the sun,GRAVITY,,,
+Space,easy,Number of planets in our solar system,8,,,
+Space,easy,Fastest thing in the universe,LIGHT,,,
+Space,easy,Space telescope launched in 1990 that changed astronomy,HUBBLE,,,
+Space,easy,Planet known as the Evening Star visible at dusk,VENUS,,,
+Space,easy,Name of the first dog sent to space,LAIKA,,,
+Space,easy,What astronauts wear in space,SPACESUIT,,,
+Space,easy,Moon of Earth,MOON,,,
+Space,medium,First woman to travel to space,TERESHKOVA,,,
+Space,medium,Year Neil Armstrong first walked on the moon,1969,,,
+Space,medium,Planet with the most moons in our solar system,SATURN,,,
+Space,medium,Region of space with gravity so strong nothing can escape,BLACK HOLE,,,
+Space,medium,Approximate distance from Earth to the Moon in kilometers,384000,,,
+Space,medium,Mission that first landed humans on the moon,APOLLO 11,,,
+Space,medium,Name of the space shuttle that exploded shortly after launch in 1986,CHALLENGER,,,
+Space,medium,Planet that has a day longer than its year,VENUS,,,
+Space,medium,Name of the rover NASA landed on Mars in 2021,PERSEVERANCE,,,
+Space,medium,Phenomenon where a star collapses into itself creating enormous density,NEUTRON STAR,,,
+Space,medium,Distance light travels in one year called a,LIGHT YEAR,,,
+Space,medium,Country that owns the International Space Station jointly,MULTIPLE COUNTRIES,,,
+Space,medium,Comet that passes Earth approximately every 75 years,HALLEYS COMET,,,
+Space,medium,First privately funded spacecraft to reach orbit,FALCON 9,,,
+Space,medium,Name of the first space station launched by the Soviet Union,SALYUT 1,,,
+Space,medium,Planet with the longest day in our solar system relative to Earth days,VENUS,,,
+Space,hard,Year Voyager 1 was launched and is now the most distant human-made object,1977,1972,1980,1969
+Space,hard,Term for the boundary around a black hole from which nothing can return,EVENT HORIZON,Singularity,Photon sphere,Schwarzschild radius
+Space,hard,Element that powers the sun through nuclear fusion,HYDROGEN,Helium,Carbon,Oxygen
+Space,hard,Planet whose moons include Europa which may have a liquid water ocean,JUPITER,Saturn,Uranus,Neptune
+Space,hard,First country to successfully land an unmanned spacecraft on Mars,SOVIET UNION,United States,China,India
+Space,hard,Name of the theoretical boundary of the observable universe,COSMIC HORIZON,Event horizon,Hubble sphere,Cosmic wall
+Space,hard,Type of star that forms after a supernova explosion with incredible density,NEUTRON STAR,White dwarf,Black hole,Pulsar
+Space,hard,Approximate age of the universe in billions of years,13.8,10,15,20
+Space,hard,Name of the first Mars rover deployed by NASA,SOJOURNER,Spirit,Opportunity,Curiosity
+Space,hard,Phenomenon that causes light from distant stars to bend around massive objects,GRAVITATIONAL LENSING,Refraction,Diffraction,Doppler effect
+Space,hard,Country that launched the first mission to orbit another planet Mercury,UNITED STATES,Soviet Union,Japan,European Union
+Space,hard,Scientist who first proposed the theory that the universe is expanding,HUBBLE,Einstein,Lemaitre,Hawking
+Space,hard,Name of the largest volcano in the solar system located on Mars,OLYMPUS MONS,Mauna Kea,Maxwell Montes,Sapas Mons
+Space,hard,Term for the period of time it takes a planet to complete one orbit around the sun,ORBITAL PERIOD,Rotational period,Synodic period,Sidereal day
+Space,hard,Year the Hubble Space Telescope was launched into orbit,1990,1985,1995,1986
+Space,hard,Only moon in the solar system known to have a dense atmosphere,TITAN,Europa,Ganymede,Io
+Literature,easy,Author of Harry Potter,ROWLING,,,
+Literature,easy,Book about a boy stranded on an island with a conch shell,LORD OF THE FLIES,,,
 Literature,easy,Author of Romeo and Juliet,SHAKESPEARE,,,
-Literature,medium,Creator of the detective Sherlock Holmes,CONAN DOYLE,,,
-Literature,hard,Author of the dystopian novels 1984 and Animal Farm,ORWELL,Huxley,Bradbury,Wells
-Human Body,easy,Organ that pumps blood through the body,HEART,,,
-Human Body,medium,Largest organ of the human body,SKIN,,,
-Human Body,hard,Longest bone in the human body,FEMUR,Tibia,Humerus,Fibula
-Famous People,easy,Physicist known for the theory of relativity,EINSTEIN,,,
-Famous People,medium,South African leader who fought against apartheid,MANDELA,,,
-Nature,easy,Tallest type of tree on Earth,REDWOOD,,,
-Nature,medium,Force that causes day and night on Earth,ROTATION,,,
-TV Shows,easy,Sitcom about six friends living in New York,FRIENDS,,,
-TV Shows,medium,Show about a chemistry teacher turned drug lord,BREAKING BAD,,,
-TV Shows,hard,Fantasy series based on George R.R. Martin's novels,GAME OF THRONES,Lord of the Rings,The Witcher,Vikings
+Literature,easy,Book featuring the character Sherlock Holmes,A STUDY IN SCARLET,,,
+Literature,easy,Famous novel set in a dystopian future with Big Brother watching,1984,,,
+Literature,easy,Author of The Great Gatsby,FITZGERALD,,,
+Literature,easy,Book about a whale hunter obsessed with a white whale,MOBY DICK,,,
+Literature,easy,Famous children's book about a caterpillar who eats everything,THE VERY HUNGRY CATERPILLAR,,,
+Literature,easy,Author of Pride and Prejudice,AUSTEN,,,
+Literature,easy,Famous novel about a boy who visits a chocolate factory,CHARLIE AND THE CHOCOLATE FACTORY,,,
+Literature,easy,Book about a hobbit who goes on an adventure with dwarves,THE HOBBIT,,,
+Literature,easy,Author of To Kill a Mockingbird,LEE,,,
+Literature,easy,Famous novel set during the French Revolution beginning with it was the best of times,A TALE OF TWO CITIES,,,
+Literature,easy,Book featuring the character Atticus Finch,TO KILL A MOCKINGBIRD,,,
+Literature,easy,Author who created the detective Hercule Poirot,CHRISTIE,,,
+Literature,easy,Famous play featuring the line To be or not to be,HAMLET,,,
+Literature,easy,Author of The Adventures of Tom Sawyer,TWAIN,,,
+Literature,medium,Nobel Prize winning author of One Hundred Years of Solitude,GARCIA MARQUEZ,,,
+Literature,medium,Book whose first line is Call me Ishmael,MOBY DICK,,,
+Literature,medium,Author of Crime and Punishment,DOSTOEVSKY,,,
+Literature,medium,Famous novel about a Spanish knight who fights windmills,DON QUIXOTE,,,
+Literature,medium,Book that coined the term doublethink and Room 101,1984,,,
+Literature,medium,Author of Wuthering Heights,EMILY BRONTE,,,
+Literature,medium,Famous American poet known for the poem The Road Not Taken,FROST,,,
+Literature,medium,Book that first introduced the character of Frankenstein's monster,FRANKENSTEIN,,,
+Literature,medium,Author of Anna Karenina,TOLSTOY,,,
+Literature,medium,Famous play by Samuel Beckett where two men wait endlessly,WAITING FOR GODOT,,,
+Literature,medium,Book that begins with the phrase It was a bright cold day in April,1984,,,
+Literature,medium,Author of One Flew Over the Cuckoo's Nest,KESEY,,,
+Literature,medium,Country of origin of the epic poem The Iliad,GREECE,,,
+Literature,medium,Author who wrote under the pen name George Eliot,MARY ANN EVANS,,,
+Literature,medium,Famous novel whose main character is named Holden Caulfield,THE CATCHER IN THE RYE,,,
+Literature,medium,Author of The Canterbury Tales,CHAUCER,,,
+Literature,hard,Author of the Divine Comedy featuring Dante's journey through Hell,DANTE ALIGHIERI,Petrarch,Boccaccio,Virgil
+Literature,hard,First novel ever written according to most literary historians,THE TALE OF GENJI,Don Quixote,Pamela,Robinson Crusoe
+Literature,hard,Country of origin of magical realism as a literary movement,LATIN AMERICA,Spain,France,Italy
+Literature,hard,Author who wrote the stream of consciousness novel Ulysses,JAMES JOYCE,Virginia Woolf,William Faulkner,Marcel Proust
+Literature,hard,Book that introduced the concept of a dystopian Brave New World,BRAVE NEW WORLD,1984,We,Fahrenheit 451
+Literature,hard,Literary technique where the narrator knows everything about all characters,OMNISCIENT NARRATION,First person,Stream of consciousness,Unreliable narrator
+Literature,hard,Author of the Nobel Prize winning novel The Old Man and the Sea,HEMINGWAY,Steinbeck,Faulkner,Fitzgerald
+Literature,hard,Famous Russian author who wrote War and Peace,TOLSTOY,Dostoevsky,Turgenev,Chekhov
+Literature,hard,Book banned in many countries for its graphic content written by Vladimir Nabokov,LOLITA,Lady Chatterley's Lover,Tropic of Cancer,Ulysses
+Literature,hard,First woman to win the Nobel Prize in Literature,SELMA LAGERLOF,Virginia Woolf,Grazia Deledda,Pearl Buck
+Literature,hard,Novel that coined the term Catch-22 meaning a paradoxical situation,CATCH-22,Slaughterhouse-Five,M*A*S*H,The Naked and the Dead
+Literature,hard,Author who wrote The Stranger originally in French,CAMUS,Sartre,Flaubert,Proust
+Literature,hard,Book that first used the word serendipity,THE THREE PRINCES OF SERENDIP,Robinson Crusoe,Gulliver's Travels,Don Quixote
+Literature,hard,Country that has produced the most Nobel Prize winners in Literature,FRANCE,United States,Britain,Sweden
+Literature,hard,Famous poet who wrote The Waste Land in 1922,ELIOT,Pound,Yeats,Auden
+Literature,hard,Literary movement characterized by experimental forms and rejection of traditional narrative,MODERNISM,Postmodernism,Romanticism,Naturalism
+Human Body,easy,Organ that pumps blood,HEART,,,
+Human Body,easy,Largest organ in the human body,SKIN,,,
+Human Body,easy,Bone that protects the brain,SKULL,,,
+Human Body,easy,Organ used for breathing,LUNGS,,,
+Human Body,easy,Organ that filters blood and produces urine,KIDNEY,,,
+Human Body,easy,Longest bone in the human body,FEMUR,,,
+Human Body,easy,Organ that digests food,STOMACH,,,
+Human Body,easy,Fluid that carries oxygen around the body,BLOOD,,,
+Human Body,easy,Number of fingers on both hands,10,,,
+Human Body,easy,Organ responsible for thinking and controlling the body,BRAIN,,,
+Human Body,easy,Body part that contains your taste buds,TONGUE,,,
+Human Body,easy,Joint that connects the leg to the foot,ANKLE,,,
+Human Body,easy,Organ that produces insulin,PANCREAS,,,
+Human Body,easy,Body part used to hear,EAR,,,
+Human Body,easy,Number of teeth an adult human has,32,,,
+Human Body,easy,Organ that removes waste from blood,KIDNEY,,,
+Human Body,easy,Part of the body where your funny bone is located,ELBOW,,,
+Human Body,medium,Part of the brain responsible for emotions and memory,LIMBIC SYSTEM,,,
+Human Body,medium,Smallest bone in the human body,STAPES,,,
+Human Body,medium,Number of vertebrae in the human spine,33,,,
+Human Body,medium,Organ that produces bile to help digest fats,LIVER,,,
+Human Body,medium,Type of blood vessel that carries blood away from the heart,ARTERY,,,
+Human Body,medium,Hormone produced when you are stressed,CORTISOL,,,
+Human Body,medium,Part of the eye that converts light into electrical signals,RETINA,,,
+Human Body,medium,Number of chambers in the human heart,4,,,
+Human Body,medium,Vitamin the body needs from sunlight,VITAMIN D,,,
+Human Body,medium,Body system responsible for fighting infections,IMMUNE SYSTEM,,,
+Human Body,medium,Number of muscles in the human body approximately,600,,,
+Human Body,medium,Gland in the brain that controls sleep cycles,PINEAL GLAND,,,
+Human Body,medium,Percentage of the human body that is water approximately,60 PERCENT,,,
+Human Body,medium,Body part that continues to grow throughout your entire life,NOSE AND EARS,,,
+Human Body,medium,Chemical element most abundant in the human body,OXYGEN,,,
+Human Body,medium,Type of joint that allows rotation like the shoulder,BALL AND SOCKET,,,
+Human Body,hard,Number of taste receptors the average human tongue has approximately,10000,5000,20000,50000
+Human Body,hard,Only organ that can regenerate itself even when 75 percent is removed,LIVER,Kidney,Skin,Intestine
+Human Body,hard,Part of the brain that controls balance and fine motor skills,CEREBELLUM,Cerebrum,Medulla oblongata,Thalamus
+Human Body,hard,Hormone produced by the pineal gland that regulates sleep,MELATONIN,Serotonin,Dopamine,Cortisol
+Human Body,hard,Average number of times the human heart beats per day,100000,50000,150000,75000
+Human Body,hard,Part of the body that produces red blood cells,BONE MARROW,Spleen,Liver,Kidneys
+Human Body,hard,Chemical that makes chili peppers hot and triggers pain receptors,CAPSAICIN,Curcumin,Piperine,Quercetin
+Human Body,hard,Only muscle in the human body that never tires,HEART,Diaphragm,Tongue,Eye muscles
+Human Body,hard,Number of neurons in the human brain approximately,86 BILLION,10 billion,500 billion,1 trillion
+Human Body,hard,Body system that includes the lymph nodes and spleen,LYMPHATIC SYSTEM,Immune system,Endocrine system,Circulatory system
+Human Body,hard,Part of the ear that converts sound vibrations into nerve signals,COCHLEA,Eardrum,Ossicles,Semicircular canals
+Human Body,hard,Protein that makes hair and nails,KERATIN,Collagen,Elastin,Fibrin
+Human Body,hard,Only bone in the body not connected to any other bone,HYOID,Patella,Sesamoid,Pisiform
+Human Body,hard,Average length of the small intestine in adults in meters,6,3,9,12
+Human Body,hard,Enzyme in saliva that begins breaking down carbohydrates,AMYLASE,Lipase,Protease,Lactase
+Human Body,hard,Part of the nervous system that controls involuntary functions like digestion,AUTONOMIC NERVOUS SYSTEM,Somatic nervous system,Central nervous system,Peripheral nervous system
+Famous People,easy,Scientist who developed the theory of relativity,EINSTEIN,,,
+Famous People,easy,Leader who ended apartheid in South Africa,MANDELA,,,
+Famous People,easy,First person to walk on the moon,ARMSTRONG,,,
+Famous People,easy,Famous nurse known as the Lady with the Lamp,NIGHTINGALE,,,
+Famous People,easy,Scientist who discovered gravity by watching an apple fall,NEWTON,,,
+Famous People,easy,Famous artist who painted the Sistine Chapel,MICHELANGELO,,,
+Famous People,easy,Civil rights leader famous for the I Have a Dream speech,MARTIN LUTHER KING,,,
+Famous People,easy,Queen of England for 70 years until 2022,ELIZABETH II,,,
+Famous People,easy,Inventor of the telephone,BELL,,,
+Famous People,easy,First female prime minister of Britain,THATCHER,,,
+Famous People,easy,Scientist who discovered penicillin,FLEMING,,,
+Famous People,easy,Famous explorer who first circumnavigated the globe,MAGELLAN,,,
+Famous People,easy,Founder of Microsoft,GATES,,,
+Famous People,easy,First president of the United States,WASHINGTON,,,
+Famous People,easy,Famous Indian leader who used nonviolent resistance,GANDHI,,,
+Famous People,easy,Famous physicist known for the equation E equals mc squared,EINSTEIN,,,
+Famous People,easy,First woman to win a Nobel Prize,CURIE,,,
+Famous People,medium,First person to reach the South Pole,AMUNDSEN,,,
+Famous People,medium,Inventor of the light bulb,EDISON,,,
+Famous People,medium,Famous painter who cut off his own ear,VAN GOGH,,,
+Famous People,medium,First female astronaut to walk in space,SAVITSKAYA,,,
+Famous People,medium,Famous pirate known as Blackbeard,EDWARD TEACH,,,
+Famous People,medium,Ancient Greek mathematician who calculated the circumference of the Earth,ERATOSTHENES,,,
+Famous People,medium,Founder of the Red Cross,DUNANT,,,
+Famous People,medium,First person to break the sound barrier in an aircraft,YEAGER,,,
+Famous People,medium,Famous Italian explorer who sailed for Spain in 1492,COLUMBUS,,,
+Famous People,medium,Roman leader who was the first Emperor of Rome,AUGUSTUS,,,
+Famous People,medium,Famous mathematician who proved Fermat's Last Theorem,WILES,,,
+Famous People,medium,Leader of the Cuban Revolution alongside Fidel Castro,GUEVARA,,,
+Famous People,medium,First woman to fly solo across the Atlantic Ocean,EARHART,,,
+Famous People,medium,Ancient Chinese military strategist who wrote The Art of War,SUN TZU,,,
+Famous People,medium,Founder of the Ford Motor Company,HENRY FORD,,,
+Famous People,medium,First person to reach the North Pole according to most historians,PEARY,,,
+Famous People,hard,First person to run a mile in under 4 minutes,BANNISTER,Landy,Santee,Ryun
+Famous People,hard,Ancient Greek philosopher who was forced to drink hemlock poison,SOCRATES,Plato,Aristotle,Pythagoras
+Famous People,hard,Physicist who first described the photoelectric effect winning the Nobel Prize,EINSTEIN,Bohr,Planck,Heisenberg
+Famous People,hard,First democratically elected female head of state in the world,SIRIMAVO BANDARANAIKE,Indira Gandhi,Golda Meir,Margaret Thatcher
+Famous People,hard,Famous mathematician who created the first computer algorithm,ADA LOVELACE,Charles Babbage,Alan Turing,Grace Hopper
+Famous People,hard,Conqueror who built the largest contiguous land empire in history,GENGHIS KHAN,Alexander the Great,Timur,Napoleon
+Famous People,hard,First person to artificially split the atom,RUTHERFORD,Bohr,Curie,Fermi
+Famous People,hard,Ancient Egyptian pharaoh who built the Great Pyramid of Giza,KHUFU,Ramesses II,Tutankhamun,Cleopatra
+Famous People,hard,Famous Renaissance artist whose real name was Donato di Niccolo,DONATELLO,Leonardo,Raphael,Titian
+Famous People,hard,First person to receive a Nobel Prize in two different sciences,MARIE CURIE,Linus Pauling,Frederick Sanger,John Bardeen
+Famous People,hard,Revolutionary leader who liberated much of South America from Spanish rule,SIMON BOLIVAR,Jose de San Martin,Bernardo O'Higgins,Antonio de Sucre
+Famous People,hard,Ancient Greek poet who is credited with writing the Iliad and the Odyssey,HOMER,Hesiod,Pindar,Sappho
+Famous People,hard,First person to orbit the Earth,GAGARIN,Glenn,Shepard,Titov
+Famous People,hard,Famous codebreaker who helped crack the Enigma code in World War Two,TURING,Churchill,Bletchley,Lovelace
+Famous People,hard,Ancient Carthaginian general who crossed the Alps with war elephants,HANNIBAL,Scipio,Pyrrhus,Vercingetorix
+Famous People,hard,First female recipient of the Fields Medal the Nobel Prize of mathematics,MARYAM MIRZAKHANI,Karen Uhlenbeck,Ingrid Daubechies,Cathleen Morawetz
+Nature,easy,Largest ocean on Earth,PACIFIC,,,
+Nature,easy,Process by which a caterpillar becomes a butterfly,METAMORPHOSIS,,,
+Nature,easy,Tallest type of tree in the world,REDWOOD,,,
+Nature,easy,Natural phenomenon that produces lightning and thunder,THUNDERSTORM,,,
+Nature,easy,Process by which water falls from clouds,RAIN,,,
+Nature,easy,Season when leaves change color and fall,AUTUMN,,,
+Nature,easy,Phenomenon where the moon blocks the sun,SOLAR ECLIPSE,,,
+Nature,easy,Type of rock formed from cooled lava,IGNEOUS,,,
+Nature,easy,Natural disaster caused by shaking of the Earth,EARTHQUAKE,,,
+Nature,easy,Body of water surrounded by land on all sides,LAKE,,,
+Nature,easy,Natural phenomenon where the sky glows green and pink near the poles,AURORA,,,
+Nature,easy,Process by which water rises from surfaces into the air,EVAPORATION,,,
+Nature,easy,Type of forest that stays green all year,EVERGREEN,,,
+Nature,easy,Natural disaster involving a large ocean wave,TSUNAMI,,,
+Nature,easy,Layer of the Earth we live on,CRUST,,,
+Nature,easy,Type of cloud that produces rain and thunder,CUMULONIMBUS,,,
+Nature,easy,Fastest natural wind phenomenon on Earth,TORNADO,,,
+Nature,medium,Type of rock formed from compressed sediment over millions of years,SEDIMENTARY,,,
+Nature,medium,Scientific term for the study of weather,METEOROLOGY,,,
+Nature,medium,Phenomenon where a river curves back on itself in a loop,OXBOW LAKE,,,
+Nature,medium,Gas responsible for the greenhouse effect,CARBON DIOXIDE,,,
+Nature,medium,Type of ecosystem found at river mouths where fresh and saltwater meet,ESTUARY,,,
+Nature,medium,Natural process that breaks rocks down into smaller pieces,EROSION,,,
+Nature,medium,Layer of the atmosphere that protects Earth from UV radiation,OZONE LAYER,,,
+Nature,medium,Type of forest found near the equator with the most biodiversity,TROPICAL RAINFOREST,,,
+Nature,medium,Phenomenon where a lake or pond is covered in algae due to excess nutrients,ALGAL BLOOM,,,
+Nature,medium,Natural process by which dead organic matter becomes soil,DECOMPOSITION,,,
+Nature,medium,Type of cloud that forms at the highest altitude,CIRRUS,,,
+Nature,medium,Phenomenon where ocean water temperatures rise abnormally causing weather disruptions,EL NINO,,,
+Nature,medium,Type of rock formed when existing rocks are changed by heat and pressure,METAMORPHIC,,,
+Nature,medium,Natural cycle that describes how water moves through the environment,WATER CYCLE,,,
+Nature,medium,Biome characterized by very little rainfall and extreme temperatures,DESERT,,,
+Nature,medium,Phenomenon where a river deposits sediment at its mouth forming a triangle,DELTA,,,
+Nature,hard,Term for the layer of permanently frozen soil found in arctic regions,PERMAFROST,Tundra,Taiga,Boreal
+Nature,hard,Type of volcanic eruption that produces fast moving rivers of molten rock,EFFUSIVE,Explosive,Plinian,Phreatomagmatic
+Nature,hard,Scientific term for the point on Earth's surface directly above the center of an earthquake,EPICENTER,Hypocenter,Focus,Seismic zone
+Nature,hard,Phenomenon where two air masses of different temperatures meet creating storms,FRONTAL SYSTEM,Cyclone,Anticyclone,Convergence
+Nature,hard,Type of cloud that forms at middle altitudes and appears like fish scales,ALTOCUMULUS,Cirrocumulus,Stratocumulus,Cumulonimbus
+Nature,hard,Natural phenomenon that creates the northern lights,SOLAR WIND,Cosmic rays,Earth's magnetic field,Aurora plasma
+Nature,hard,Process by which nitrogen is converted into forms usable by plants,NITROGEN FIXATION,Nitrification,Denitrification,Assimilation
+Nature,hard,Type of ecosystem found between the ocean and land that buffers storms,MANGROVE,Wetland,Salt marsh,Seagrass meadow
+Nature,hard,Scientific term for a scientist who studies earthquakes,SEISMOLOGIST,Geologist,Volcanologist,Tectonologist
+Nature,hard,Phenomenon where hot water and steam erupt periodically from the ground,GEYSER,Hot spring,Fumarole,Mudpot
+Nature,hard,Type of erosion caused by wind carrying sand particles,AEOLIAN EROSION,Fluvial erosion,Coastal erosion,Glacial erosion
+Nature,hard,Deepest point in any ocean in the world,MARIANA TRENCH,Puerto Rico Trench,Java Trench,Tonga Trench
+Nature,hard,Natural phenomenon where soil becomes liquid during an earthquake,LIQUEFACTION,Subsidence,Landslide,Erosion
+Nature,hard,Scientific term for the variety of life in a particular habitat,BIODIVERSITY,Ecology,Biomass,Species richness
+Nature,hard,Type of cloud that produces hail,CUMULONIMBUS,Nimbostratus,Altostratus,Stratocumulus
+Nature,hard,Process by which plants lose water through their leaves,TRANSPIRATION,Evaporation,Respiration,Photosynthesis
+TV Shows,easy,Show about a group of friends in New York City with a famous coffee shop,FRIENDS,,,
+TV Shows,easy,Show featuring a chemistry teacher who becomes a drug manufacturer,BREAKING BAD,,,
+TV Shows,easy,Show based on George R R Martin's books about kingdoms fighting for a throne,GAME OF THRONES,,,
+TV Shows,easy,Animated show about a yellow family in Springfield,THE SIMPSONS,,,
+TV Shows,easy,Show about survivors on a mysterious island after a plane crash,LOST,,,
+TV Shows,easy,Show about a brilliant but antisocial detective in modern London,SHERLOCK,,,
+TV Shows,easy,Netflix show about teenagers with superpowers in a small town,STRANGER THINGS,,,
+TV Shows,easy,Show about a paper company in Scranton Pennsylvania filmed as a documentary,THE OFFICE,,,
+TV Shows,easy,Show about a British secret agent numbered 007,JAMES BOND,,,
+TV Shows,easy,Show about the mafia family led by Tony in New Jersey,THE SOPRANOS,,,
+TV Shows,easy,Animated show about South Park Colorado with four boys,SOUTH PARK,,,
+TV Shows,easy,Show about a group of people stranded on a deserted island voted off one by one,SURVIVOR,,,
+TV Shows,easy,Show featuring Doctor Who traveling through time in a blue box,DOCTOR WHO,,,
+TV Shows,easy,Show about medical staff at Grey Sloan Memorial Hospital,GREYS ANATOMY,,,
+TV Shows,easy,Show about a man who wakes up every day at the same time,GROUNDHOG DAY,,,
+TV Shows,easy,Reality show where aspiring singers compete for a record deal,AMERICAN IDOL,,,
+TV Shows,easy,Show about the royal British family's modern history,THE CROWN,,,
+TV Shows,medium,Show that holds the record for most Emmy Award wins,GAME OF THRONES,,,
+TV Shows,medium,First Netflix original series,HOUSE OF CARDS,,,
+TV Shows,medium,Show about advertising executives in 1960s New York,MAD MEN,,,
+TV Shows,medium,Country where the format for the reality show Big Brother originated,NETHERLANDS,,,
+TV Shows,medium,Show about a high school teacher and his students forming a singing club,GLEE,,,
+TV Shows,medium,Show about detectives investigating cold cases in Baltimore,THE WIRE,,,
+TV Shows,medium,Animated show featuring a character named Bender who is a robot,FUTURAMA,,,
+TV Shows,medium,Show that popularized the phrase Winter is Coming,GAME OF THRONES,,,
+TV Shows,medium,Country of origin of the show that became Money Heist on Netflix,SPAIN,,,
+TV Shows,medium,Show about a group of astronauts and scientists on a space station,THE EXPANSE,,,
+TV Shows,medium,First show to stream all episodes at once creating the concept of binge watching,HOUSE OF CARDS,,,
+TV Shows,medium,Show about a man who discovers his wife is a spy,THE AMERICANS,,,
+TV Shows,medium,Country of origin of the show Black Mirror,UNITED KINGDOM,,,
+TV Shows,medium,Show about a fictional Scandinavian country's political drama,BORGEN,,,
+TV Shows,medium,Show that introduced the concept of a TV anti-hero with Walter White,BREAKING BAD,,,
+TV Shows,medium,First Korean show to win an Emmy Award,SQUID GAME,,,
+TV Shows,hard,Year the show Friends first aired on television,1994,1990,1996,1992
+TV Shows,hard,Show whose finale remains the most watched television event in US history,MASH,Friends,The Sopranos,Seinfeld
+TV Shows,hard,Country of origin of the show that became known internationally as Squid Game,SOUTH KOREA,Japan,China,Thailand
+TV Shows,hard,First show to win the Primetime Emmy for Outstanding Drama Series five times,THE WEST WING,The Sopranos,Mad Men,Breaking Bad
+TV Shows,hard,Show that inspired the term jumping the shark meaning a show has passed its peak,HAPPY DAYS,Friends,Fonzie,Laverne and Shirley
+TV Shows,hard,Country of origin of the original format of the show The Office,UNITED KINGDOM,United States,Australia,Canada
+TV Shows,hard,Year the show Breaking Bad first aired,2008,2005,2010,2006
+TV Shows,hard,Show whose episode The Rains of Castamere became famous for killing major characters,GAME OF THRONES,The Sopranos,Breaking Bad,Lost
+TV Shows,hard,First streaming show to win the Emmy Award for Outstanding Drama Series,THE HANDMAID'S TALE,House of Cards,Stranger Things,Ozark
+TV Shows,hard,Country of origin of the popular crime show Money Heist originally called La Casa de Papel,SPAIN,Italy,Portugal,Argentina
+TV Shows,hard,Show that holds the record for longest running animated series in television history,THE SIMPSONS,Family Guy,South Park,Futurama
+TV Shows,hard,Year the show Game of Thrones first aired,2011,2009,2013,2007
+TV Shows,hard,Show set in a women's prison in New Jersey that premiered on Netflix in 2013,ORANGE IS THE NEW BLACK,Wentworth,Vis-a-Vis,Bad Girls
+TV Shows,hard,First show to be cancelled and then revived due to fan pressure on social media,ARRESTED DEVELOPMENT,Firefly,Jericho,Community
+TV Shows,hard,Show about a sociopathic serial killer who works for Miami Metro Police Department,DEXTER,Hannibal,Mindhunter,The Following
+TV Shows,hard,Country of origin of the political drama show that inspired House of Cards,UNITED KINGDOM,United States,Australia,Canada
