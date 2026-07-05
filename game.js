@@ -32,7 +32,8 @@ const CATEGORIES = [
 ];
 
 const KEYBOARD_ROWS = ["1234567890", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
-const SYMBOL_ROW = ["-", "'", ".", ",", "&", "#", "@", "?", "!"];
+const SYMBOL_ROW_LEFT = ["-", "'", ".", ","];
+const SYMBOL_ROW_RIGHT = ["&", "#", "@", "?", "!"];
 const LETTER_ATTEMPTS = 6;
 
 // Single global state object — expanded across prompts (run, hearts, score, etc.)
@@ -651,11 +652,12 @@ function buildKeyboard() {
   });
 
   // Symbol row: covers the punctuation that real answers use (SPIDER-MAN,
-  // HADRIAN'S WALL, E.T., R&B, C#) plus a wide spacebar at the end.
+  // HADRIAN'S WALL, E.T., R&B, C#), with a wide spacebar centered between
+  // the two symbol clusters.
   const symbolRow = document.createElement("div");
   symbolRow.className = "keyboard__row keyboard__row--symbols";
 
-  SYMBOL_ROW.forEach((symbol) => {
+  const appendSymbolKey = (symbol) => {
     const key = document.createElement("button");
     key.type = "button";
     key.className = "key key--symbol";
@@ -663,7 +665,9 @@ function buildKeyboard() {
     key.dataset.letter = symbol;
     key.addEventListener("click", () => handleKeyPress(symbol));
     symbolRow.appendChild(key);
-  });
+  };
+
+  SYMBOL_ROW_LEFT.forEach(appendSymbolKey);
 
   const spaceKey = document.createElement("button");
   spaceKey.type = "button";
@@ -672,6 +676,8 @@ function buildKeyboard() {
   spaceKey.dataset.letter = " ";
   spaceKey.addEventListener("click", () => handleKeyPress(" "));
   symbolRow.appendChild(spaceKey);
+
+  SYMBOL_ROW_RIGHT.forEach(appendSymbolKey);
 
   container.appendChild(symbolRow);
 }
