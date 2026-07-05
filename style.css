@@ -2,55 +2,22 @@
    Trivia Guess — Global Styles
    ========================================================================== */
 
-/* App handles its own theming — opt every element out of the browser's
-   forced-dark-mode heuristic so system dark mode never inverts colors.
-   "only light" is the stricter form of the directive: it tells the UA
-   this page is not dark-mode-aware at all, rather than just hinting a
-   preference (which is what plain "light" does, and Samsung Internet's
-   aggressive forced-dark filter ignores). */
-:root,
-html,
-body {
-  color-scheme: only light;
-}
-
-/* Belt-and-braces: Samsung Internet / Samsung's WebView apply forced-dark
-   more aggressively than stock Chrome and have been seen overriding plain
-   color-scheme hints. Re-assert the real theme colors and explicitly
-   disable any invert-style filter while prefers-color-scheme is dark. */
-@media (prefers-color-scheme: dark) {
-  :root,
-  html,
-  body {
-    color-scheme: only light !important;
-    background-color: #46178F !important;
-    color: #ffffff !important;
-  }
-
-  html {
-    filter: none !important;
-    -webkit-filter: none !important;
-  }
-
-  /* Every element that intentionally uses a white/light background —
-     re-declare it explicitly so a forced-dark filter has nothing to
-     "correct". */
-  .mix-card,
-  #play-again-btn,
-  .daily-result__home-btn {
-    background: linear-gradient(135deg, #ffffff 0%, #f4ecff 100%) !important;
-    color: #46178F !important;
-    filter: none !important;
-  }
-
-  .switch__thumb {
-    background: #ffffff !important;
-    filter: none !important;
-  }
-}
+/* ---- Theming ----
+   Three user-selectable themes, applied via <html data-theme="...">
+   (see game.js applyTheme()). This attribute — not the OS setting — is the
+   single source of truth for which palette renders:
+     - "light"  forces the classic purple palette below, regardless of the
+                phone's system setting (also defeats Samsung's aggressive
+                forced-dark WebView filter, which only backs off when a
+                page explicitly declares light-only color-scheme support).
+     - "dark"   forces the premium dark-purple night palette, regardless of
+                the phone's system setting.
+     - "system" (default) follows the phone's current color scheme, via the
+                @media query below.
+*/
 
 :root {
-  /* Color palette */
+  /* Color palette — Light theme (default) */
   --color-bg-primary: #46178F;
   --color-bg-secondary: #5B24A8;
   --color-gold: #F2C94C;
@@ -70,6 +37,7 @@ body {
   --card-bg: rgba(255, 255, 255, 0.08);
   --card-bg-hover: rgba(255, 255, 255, 0.14);
   --card-border: rgba(255, 255, 255, 0.12);
+  --key-bg: var(--card-bg);
 
   /* Fonts */
   --font-display: "Fredoka", "Poppins", sans-serif;
@@ -83,6 +51,70 @@ body {
   /* Motion */
   --transition-fast: 120ms ease;
   --transition-base: 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html[data-theme="light"] {
+  /* Explicitly declaring light-only support is what stops Samsung
+     Internet / Samsung WebView's forced-dark filter from re-inverting
+     these colors when the phone itself is in dark mode. */
+  color-scheme: only light;
+}
+
+html[data-theme="dark"] {
+  /* Premium night palette — designed, not inverted. */
+  --color-bg-primary: #1e0a3d;
+  --color-bg-secondary: #2a1450;
+  --color-gold: #F2C94C;
+  --color-gold-soft: #f7dd8a;
+  --color-text-primary: #FFFFFF;
+  --color-text-muted: #e8def8;
+  --color-hint: #b79bd9;
+
+  --color-red: #E74C3C;
+  --color-blue: #3498DB;
+  --color-yellow: #F1C40F;
+  --color-green: #2ECC71;
+
+  --color-correct: #FFD6E7;
+  --color-wrong: #E74C3C;
+
+  --card-bg: #2a1450;
+  --card-bg-hover: #34195f;
+  --card-border: #4a2585;
+  --key-bg: #3d1a6e;
+
+  color-scheme: dark;
+}
+
+html[data-theme="system"] {
+  /* Supports both — lets native form controls (checkboxes, sliders,
+     scrollbars) adapt to whichever the phone is currently using. */
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="system"] {
+    --color-bg-primary: #1e0a3d;
+    --color-bg-secondary: #2a1450;
+    --color-gold: #F2C94C;
+    --color-gold-soft: #f7dd8a;
+    --color-text-primary: #FFFFFF;
+    --color-text-muted: #e8def8;
+    --color-hint: #b79bd9;
+
+    --color-red: #E74C3C;
+    --color-blue: #3498DB;
+    --color-yellow: #F1C40F;
+    --color-green: #2ECC71;
+
+    --color-correct: #FFD6E7;
+    --color-wrong: #E74C3C;
+
+    --card-bg: #2a1450;
+    --card-bg-hover: #34195f;
+    --card-border: #4a2585;
+    --key-bg: #3d1a6e;
+  }
 }
 
 /* ---- Reset ---- */
@@ -107,6 +139,7 @@ body {
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 button {
@@ -128,13 +161,15 @@ img {
   display: block;
 }
 
-/* Smooth transitions on all interactive elements */
+/* Smooth transitions on all interactive elements (also covers theme swaps,
+   since these all pull their colors from CSS variables) */
 button,
 a,
 .stat-pill,
 .daily-card,
 .mix-card,
-.category-card {
+.category-card,
+.settings-section {
   transition: transform var(--transition-fast), background-color var(--transition-base),
     box-shadow var(--transition-base), border-color var(--transition-base), opacity var(--transition-base);
 }
@@ -629,7 +664,7 @@ a,
   flex: 1;
   max-width: 38px;
   padding: 12px 0;
-  background: var(--card-bg);
+  background: var(--key-bg);
   border: 1px solid var(--card-border);
   border-radius: 8px;
   font-weight: 600;
@@ -1306,6 +1341,41 @@ a,
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 600;
+}
+
+/* ---- Theme segmented control ---- */
+
+.theme-toggle {
+  display: flex;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 4px;
+}
+
+.theme-option {
+  flex: 1;
+  padding: 10px 6px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color var(--transition-base), color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.theme-option:active {
+  transform: scale(0.96);
+}
+
+.theme-option--active {
+  background: var(--color-gold);
+  color: var(--color-bg-primary);
+  box-shadow: 0 2px 10px rgba(242, 201, 76, 0.35);
 }
 
 .settings-toggle-row {

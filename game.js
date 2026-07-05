@@ -1276,6 +1276,26 @@ function getDailyChallengeQuestion(allQuestions) {
   return pool[hash % pool.length];
 }
 
+// ---- Theme (Light / Dark / System) ----
+
+const THEME_STORAGE_KEY = "theme_preference";
+
+function getStoredThemePreference() {
+  const stored = localStorage.getItem(THEME_STORAGE_KEY);
+  return stored === "light" || stored === "dark" || stored === "system" ? stored : "system";
+}
+
+function applyTheme(preference) {
+  document.documentElement.setAttribute("data-theme", preference);
+  localStorage.setItem(THEME_STORAGE_KEY, preference);
+
+  document.querySelectorAll(".theme-option").forEach((btn) => {
+    const isActive = btn.dataset.themeOption === preference;
+    btn.classList.toggle("theme-option--active", isActive);
+    btn.setAttribute("aria-checked", String(isActive));
+  });
+}
+
 function setupEventListeners() {
   document.getElementById("mix-category").addEventListener("click", (e) => {
     openDifficultyPicker(e.currentTarget.dataset.category);
@@ -1332,6 +1352,15 @@ function setupEventListeners() {
 
   document.getElementById("fireworks-replay-btn").addEventListener("click", () => {
     showBirthdayFireworks();
+  });
+
+  const themeToggle = document.getElementById("theme-toggle");
+  applyTheme(getStoredThemePreference());
+
+  themeToggle.addEventListener("click", (e) => {
+    const btn = e.target.closest(".theme-option");
+    if (!btn) return;
+    applyTheme(btn.dataset.themeOption);
   });
 
   const muteToggle = document.getElementById("mute-toggle");
@@ -1547,3 +1576,5 @@ window.handleDifficultyPick = handleDifficultyPick;
 window.isJulyFourth = isJulyFourth;
 window.showBirthdayFireworks = showBirthdayFireworks;
 window.hideBirthdayFireworks = hideBirthdayFireworks;
+window.applyTheme = applyTheme;
+window.getStoredThemePreference = getStoredThemePreference;

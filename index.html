@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Inline, before any external stylesheet loads, so it wins the race
-       against Samsung Internet / Samsung WebView's forced-dark filter. -->
-  <style>
-    :root { color-scheme: only light !important; }
-    html { -webkit-filter: none !important; filter: none !important; }
-  </style>
+  <!-- Applied before any external stylesheet loads (and before first paint)
+       so there's no flash of the wrong theme. The actual palette is driven
+       entirely by the data-theme attribute + CSS (see style.css) — this
+       inline script just restores whatever the user picked last time. -->
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("theme_preference") || "system";
+        document.documentElement.setAttribute("data-theme", pref);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "system");
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#46178F" />
-  <meta name="color-scheme" content="only light" />
-  <meta name="supported-color-schemes" content="light" />
-  <meta name="darkreader-lock" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Rameeza's Trivia" />
@@ -119,6 +124,16 @@
         <button class="back-btn" id="settings-back-btn" type="button" aria-label="Back to home">←</button>
         <h2 class="settings-title">Settings</h2>
         <span class="settings-topbar-spacer" aria-hidden="true"></span>
+      </div>
+
+      <div class="settings-section">
+        <h3 class="settings-section__title">🎨 Theme</h3>
+
+        <div class="theme-toggle" id="theme-toggle" role="radiogroup" aria-label="Theme">
+          <button type="button" class="theme-option" data-theme-option="light" role="radio" aria-checked="false">☀️ Light</button>
+          <button type="button" class="theme-option" data-theme-option="dark" role="radio" aria-checked="false">🌙 Dark</button>
+          <button type="button" class="theme-option" data-theme-option="system" role="radio" aria-checked="false">📱 System</button>
+        </div>
       </div>
 
       <div class="settings-section">
