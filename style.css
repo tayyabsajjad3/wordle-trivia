@@ -3,11 +3,50 @@
    ========================================================================== */
 
 /* App handles its own theming — opt every element out of the browser's
-   forced-dark-mode heuristic so system dark mode never inverts colors. */
+   forced-dark-mode heuristic so system dark mode never inverts colors.
+   "only light" is the stricter form of the directive: it tells the UA
+   this page is not dark-mode-aware at all, rather than just hinting a
+   preference (which is what plain "light" does, and Samsung Internet's
+   aggressive forced-dark filter ignores). */
 :root,
 html,
 body {
-  color-scheme: light;
+  color-scheme: only light;
+}
+
+/* Belt-and-braces: Samsung Internet / Samsung's WebView apply forced-dark
+   more aggressively than stock Chrome and have been seen overriding plain
+   color-scheme hints. Re-assert the real theme colors and explicitly
+   disable any invert-style filter while prefers-color-scheme is dark. */
+@media (prefers-color-scheme: dark) {
+  :root,
+  html,
+  body {
+    color-scheme: only light !important;
+    background-color: #46178F !important;
+    color: #ffffff !important;
+  }
+
+  html {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+
+  /* Every element that intentionally uses a white/light background —
+     re-declare it explicitly so a forced-dark filter has nothing to
+     "correct". */
+  .mix-card,
+  #play-again-btn,
+  .daily-result__home-btn {
+    background: linear-gradient(135deg, #ffffff 0%, #f4ecff 100%) !important;
+    color: #46178F !important;
+    filter: none !important;
+  }
+
+  .switch__thumb {
+    background: #ffffff !important;
+    filter: none !important;
+  }
 }
 
 :root {
@@ -341,7 +380,7 @@ a,
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   /* Without this, some mobile browsers' forced-dark-mode heuristic
      re-inverts this button's explicit white background back to black. */
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 .mix-card__icon {
@@ -1133,7 +1172,7 @@ a,
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   /* Without this, some mobile browsers' forced-dark-mode heuristic
      re-inverts this button's explicit white background back to black. */
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 #go-home-btn {
