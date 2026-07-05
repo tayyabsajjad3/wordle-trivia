@@ -1,4 +1,4 @@
-const CACHE_NAME = "rameezas-trivia-v4";
+const CACHE_NAME = "rameezas-trivia-v5";
 
 // Deployed to GitHub Pages at https://tayyabsajjad3.github.io/wordle-trivia/,
 // so every cached path is prefixed with the /wordle-trivia/ project subdirectory.

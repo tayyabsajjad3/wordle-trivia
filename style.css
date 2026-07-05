@@ -2,6 +2,14 @@
    Trivia Guess — Global Styles
    ========================================================================== */
 
+/* App handles its own theming — opt every element out of the browser's
+   forced-dark-mode heuristic so system dark mode never inverts colors. */
+:root,
+html,
+body {
+  color-scheme: light;
+}
+
 :root {
   /* Color palette */
   --color-bg-primary: #46178F;
