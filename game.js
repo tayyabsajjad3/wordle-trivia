@@ -1009,7 +1009,19 @@ function handleKeyPress(letter) {
   sounds.play("click");
 
   if (nextPos === undefined) {
-    // Every occurrence of this letter is already revealed — no-op, no penalty.
+    // Every occurrence of this letter is already revealed. Still a correct
+    // letter overall, so the key stays enabled/pressable and never greys
+    // out — but tapping it again wastes a guess, so it costs a life same
+    // as a wrong letter.
+    run.lettersLeft -= 1;
+    triggerShake();
+    sounds.play("wrong");
+    haptics.vibrate(60);
+    updateLettersLeftDisplay();
+
+    if (run.lettersLeft <= 0) {
+      setTimeout(() => handleRoundLoss(), 300);
+    }
     return;
   }
 
