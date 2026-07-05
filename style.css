@@ -562,13 +562,17 @@ a,
 .keyboard {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .keyboard__row {
   display: flex;
   justify-content: center;
   gap: 6px;
+}
+
+.keyboard__row--symbols {
+  gap: 4px;
 }
 
 .key {
@@ -581,6 +585,21 @@ a,
   font-weight: 600;
   font-size: 0.95rem;
   text-align: center;
+  min-height: 32px;
+  min-width: 24px;
+}
+
+.key--symbol {
+  max-width: 30px;
+  padding: 9px 0;
+  font-size: 0.8rem;
+}
+
+.key--space {
+  flex: 5;
+  max-width: none;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
 }
 
 .key:active:not(:disabled) {
@@ -594,7 +613,7 @@ a,
 }
 
 .key--correct-flash {
-  animation: pulseCorrect 0.5s ease;
+  animation: pulseCorrect 0.18s ease;
 }
 
 .key--wrong {

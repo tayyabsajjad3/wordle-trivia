@@ -32,6 +32,7 @@ const CATEGORIES = [
 ];
 
 const KEYBOARD_ROWS = ["1234567890", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
+const SYMBOL_ROW = ["-", "'", ".", ",", "&", "#", "@", "?", "!"];
 const LETTER_ATTEMPTS = 6;
 
 // Single global state object — expanded across prompts (run, hearts, score, etc.)
@@ -648,6 +649,31 @@ function buildKeyboard() {
 
     container.appendChild(row);
   });
+
+  // Symbol row: covers the punctuation that real answers use (SPIDER-MAN,
+  // HADRIAN'S WALL, E.T., R&B, C#) plus a wide spacebar at the end.
+  const symbolRow = document.createElement("div");
+  symbolRow.className = "keyboard__row keyboard__row--symbols";
+
+  SYMBOL_ROW.forEach((symbol) => {
+    const key = document.createElement("button");
+    key.type = "button";
+    key.className = "key key--symbol";
+    key.textContent = symbol;
+    key.dataset.letter = symbol;
+    key.addEventListener("click", () => handleKeyPress(symbol));
+    symbolRow.appendChild(key);
+  });
+
+  const spaceKey = document.createElement("button");
+  spaceKey.type = "button";
+  spaceKey.className = "key key--symbol key--space";
+  spaceKey.textContent = "SPACE";
+  spaceKey.dataset.letter = " ";
+  spaceKey.addEventListener("click", () => handleKeyPress(" "));
+  symbolRow.appendChild(spaceKey);
+
+  container.appendChild(symbolRow);
 }
 
 function renderHearts(hearts, maxHearts = 3) {
@@ -936,7 +962,7 @@ function revealLetterBox(pos) {
 function flashKeyGreen(keyBtn) {
   if (!keyBtn) return;
   keyBtn.classList.add("key--correct", "key--correct-flash");
-  setTimeout(() => keyBtn.classList.remove("key--correct-flash", "key--correct"), 500);
+  setTimeout(() => keyBtn.classList.remove("key--correct-flash", "key--correct"), 200);
 }
 
 function handleKeyPress(letter) {
